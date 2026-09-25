@@ -1,5 +1,5 @@
 import assert from "node:assert";
-import { afterEach, beforeEach, describe, expect, it } from "vitest";
+import { afterEach, beforeEach, describe, expect, it } from "vite-plus/test";
 import { fetchRawBytes } from "../../lib/raw-fetch.js";
 
 describe("fetchRawBytes", () => {
