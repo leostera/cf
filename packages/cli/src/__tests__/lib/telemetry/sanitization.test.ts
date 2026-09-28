@@ -1,8 +1,8 @@
-import { CloudflareApiError } from "#sdk";
 import { APIError as WorkersUtilsAPIError } from "@cloudflare/workers-utils";
 import { describe, expect, it } from "vitest";
 import { sanitizeError } from "../../../lib/telemetry/error-sanitization.js";
 import { REDACTED, sanitizeArgs } from "../../../lib/telemetry/sanitization.js";
+import { CloudflareApiError } from "#sdk";
 
 describe("sanitizeArgs", () => {
 	it("records finite values and redacts free-form values", () => {
