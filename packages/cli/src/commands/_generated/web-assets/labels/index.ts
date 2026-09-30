@@ -1,12 +1,12 @@
-import $list from "./list.js";
-import $managed from "./managed/index.js";
-import $user from "./user/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * labels command group
  * @generated from apis/overlays/web-assets.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $list from "./list.js";
+import $managed from "./managed/index.js";
+import $user from "./user/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "labels",

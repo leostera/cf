@@ -1,11 +1,11 @@
-import $applications from "./applications.js";
-import $by from "./by/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * get command group
  * @generated from apis/overlays/accounts.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $applications from "./applications.js";
+import $by from "./by/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "get",

@@ -1,13 +1,13 @@
-import $clear from "./clear.js";
-import $edit from "./edit.js";
-import $get from "./get.js";
-import $status from "./status.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * reserve command group
  * @generated from apis/overlays/cache.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $clear from "./clear.js";
+import $edit from "./edit.js";
+import $get from "./get.js";
+import $status from "./status.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "reserve",

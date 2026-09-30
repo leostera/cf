@@ -1,15 +1,15 @@
-import $addresses from "./addresses/index.js";
-import $disable from "./disable.js";
-import $dns from "./dns/index.js";
-import $enable from "./enable.js";
-import $rules from "./rules/index.js";
-import $settings from "./settings/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * email-routing command
  * @generated from apis/overlays/email-routing.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $disable from "./disable.js";
+import $enable from "./enable.js";
+import $addresses from "./addresses/index.js";
+import $dns from "./dns/index.js";
+import $rules from "./rules/index.js";
+import $settings from "./settings/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "email-routing",

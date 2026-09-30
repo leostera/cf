@@ -1,13 +1,13 @@
-import $get from "./get.js";
-import $malicious from "./malicious/index.js";
-import $spam from "./spam/index.js";
-import $spoof from "./spoof/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * tlds command group
  * @generated from apis/overlays/radar.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $get from "./get.js";
+import $malicious from "./malicious/index.js";
+import $spam from "./spam/index.js";
+import $spoof from "./spoof/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "tlds",

@@ -1,14 +1,14 @@
-import $create from "./create.js";
-import $eligibledevices from "./eligible-devices/index.js";
-import $list from "./list.js";
-import $quota from "./quota/index.js";
-import $results from "./results/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * commands command group
  * @generated from apis/overlays/zero-trust.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $create from "./create.js";
+import $list from "./list.js";
+import $eligibledevices from "./eligible-devices/index.js";
+import $quota from "./quota/index.js";
+import $results from "./results/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "commands",

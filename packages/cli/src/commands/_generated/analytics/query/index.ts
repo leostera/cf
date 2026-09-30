@@ -1,13 +1,13 @@
-import $datasecurity from "./data-security/index.js";
-import $summary from "./summary.js";
-import $timeseries from "./timeseries.js";
-import $topn from "./top-n.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * query command group
  * @generated from apis/overlays/analytics.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $summary from "./summary.js";
+import $timeseries from "./timeseries.js";
+import $topn from "./top-n.js";
+import $datasecurity from "./data-security/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "query",

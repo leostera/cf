@@ -1,10 +1,10 @@
-import $list from "./list.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * references command group
  * @generated from apis/overlays/user.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $list from "./list.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "references",

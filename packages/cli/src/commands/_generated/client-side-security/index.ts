@@ -1,14 +1,14 @@
-import $connections from "./connections/index.js";
-import $cookies from "./cookies/index.js";
-import $policies from "./policies/index.js";
-import $scripts from "./scripts/index.js";
-import $settings from "./settings/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * client-side-security command
  * @generated from apis/overlays/client-side-security.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $connections from "./connections/index.js";
+import $cookies from "./cookies/index.js";
+import $policies from "./policies/index.js";
+import $scripts from "./scripts/index.js";
+import $settings from "./settings/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "client-side-security",

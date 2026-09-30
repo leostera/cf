@@ -1,9 +1,9 @@
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * search command
  * @generated from apis/overlays/search.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "search",

@@ -1,11 +1,11 @@
-import $summary from "./summary.js";
-import $timeseriesgroups from "./timeseries-groups.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * tcp-resets-timeouts command group
  * @generated from apis/overlays/radar.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $summary from "./summary.js";
+import $timeseriesgroups from "./timeseries-groups.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "tcp-resets-timeouts",

@@ -1,3 +1,9 @@
+/**
+ * rules command group
+ * @generated from apis/overlays/api-security.ts
+ */
+import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
 import $bulkcreate from "./bulk-create.js";
 import $bulkedit from "./bulk-edit.js";
 import $create from "./create.js";
@@ -5,12 +11,6 @@ import $delete from "./delete.js";
 import $edit from "./edit.js";
 import $get from "./get.js";
 import $list from "./list.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
-/**
- * rules command group
- * @generated from apis/overlays/api-security.ts
- */
-import type { CommandModule } from "yargs";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "rules",

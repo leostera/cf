@@ -1,10 +1,10 @@
-import $zsks from "./zsks.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * list command group
  * @generated from apis/overlays/dns.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $zsks from "./zsks.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "list",

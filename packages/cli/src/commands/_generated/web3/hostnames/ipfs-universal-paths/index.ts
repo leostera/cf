@@ -1,10 +1,10 @@
-import $contentlists from "./content-lists/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * ipfs-universal-paths command group
  * @generated from apis/overlays/web3.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $contentlists from "./content-lists/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "ipfs-universal-paths",

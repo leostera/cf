@@ -1,10 +1,10 @@
-import $delete from "./delete.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * relate command group
  * @generated from apis/overlays/cloudforce-one.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $delete from "./delete.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "relate",

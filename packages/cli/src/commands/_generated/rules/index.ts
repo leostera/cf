@@ -1,10 +1,10 @@
-import $lists from "./lists/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * rules command
  * @generated from apis/overlays/rules.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $lists from "./lists/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "rules",

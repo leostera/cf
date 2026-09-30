@@ -1,10 +1,10 @@
-import $search from "./search.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * scripts command group
  * @generated from apis/overlays/workers.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $search from "./search.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "scripts",

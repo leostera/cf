@@ -1,3 +1,9 @@
+/**
+ * agent-memory command
+ * @generated from apis/overlays/agent-memory.ts
+ */
+import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
 import $createnamespace from "./create-namespace.js";
 import $deletememory from "./delete-memory.js";
 import $deletenamespace from "./delete-namespace.js";
@@ -12,12 +18,6 @@ import $listprofiles from "./list-profiles.js";
 import $recall from "./recall.js";
 import $remember from "./remember.js";
 import $summary from "./summary.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
-/**
- * agent-memory command
- * @generated from apis/overlays/agent-memory.ts
- */
-import type { CommandModule } from "yargs";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "agent-memory",

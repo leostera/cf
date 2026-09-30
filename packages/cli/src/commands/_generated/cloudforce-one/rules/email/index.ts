@@ -1,19 +1,19 @@
-import $approvals from "./approvals/index.js";
-import $create from "./create.js";
-import $delete from "./delete.js";
-import $get from "./get.js";
-import $list from "./list.js";
-import $schema from "./schema/index.js";
-import $test from "./test.js";
-import $update from "./update.js";
-import $updatePendingApproval from "./updatePendingApproval.js";
-import $validate from "./validate.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * email command group
  * @generated from apis/overlays/cloudforce-one.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $create from "./create.js";
+import $delete from "./delete.js";
+import $get from "./get.js";
+import $list from "./list.js";
+import $test from "./test.js";
+import $update from "./update.js";
+import $updatePendingApproval from "./updatePendingApproval.js";
+import $validate from "./validate.js";
+import $approvals from "./approvals/index.js";
+import $schema from "./schema/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "email",

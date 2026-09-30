@@ -1,11 +1,11 @@
-import $rules from "./rules/index.js";
-import $settings from "./settings/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * tracing command group
  * @generated from apis/overlays/observability.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $rules from "./rules/index.js";
+import $settings from "./settings/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "tracing",

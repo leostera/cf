@@ -1,11 +1,11 @@
-import $issuetypes from "./issue-types/index.js";
-import $issues from "./issues/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * attack-surface-report command group
  * @generated from apis/overlays/intel.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $issuetypes from "./issue-types/index.js";
+import $issues from "./issues/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "attack-surface-report",

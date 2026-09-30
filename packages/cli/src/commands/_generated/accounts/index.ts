@@ -1,26 +1,26 @@
-import $applications from "./applications/index.js";
-import $billing from "./billing/index.js";
-import $categories from "./categories/index.js";
-import $create from "./create.js";
-import $delete from "./delete.js";
-import $get from "./get.js";
-import $list from "./list.js";
-import $logs from "./logs/index.js";
-import $members from "./members/index.js";
-import $move from "./move.js";
-import $organization from "./organization/index.js";
-import $profile from "./profile/index.js";
-import $subscriptions from "./subscriptions/index.js";
-import $tokens from "./tokens/index.js";
-import $transformations from "./transformations/index.js";
-import $update from "./update.js";
-import $utbilling from "./ut-billing/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * accounts command
  * @generated from apis/overlays/accounts.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $create from "./create.js";
+import $delete from "./delete.js";
+import $get from "./get.js";
+import $list from "./list.js";
+import $move from "./move.js";
+import $update from "./update.js";
+import $applications from "./applications/index.js";
+import $billing from "./billing/index.js";
+import $categories from "./categories/index.js";
+import $logs from "./logs/index.js";
+import $members from "./members/index.js";
+import $organization from "./organization/index.js";
+import $profile from "./profile/index.js";
+import $subscriptions from "./subscriptions/index.js";
+import $tokens from "./tokens/index.js";
+import $transformations from "./transformations/index.js";
+import $utbilling from "./ut-billing/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "accounts",

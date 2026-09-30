@@ -1,19 +1,19 @@
-import $abortall from "./abort-all.js";
-import $abort from "./abort.js";
-import $create from "./create.js";
-import $delete from "./delete.js";
-import $get from "./get.js";
-import $list from "./list.js";
-import $logs from "./logs/index.js";
-import $pause from "./pause.js";
-import $progress from "./progress.js";
-import $resume from "./resume.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * jobs command group
  * @generated from apis/overlays/r2.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $abort from "./abort.js";
+import $abortall from "./abort-all.js";
+import $create from "./create.js";
+import $delete from "./delete.js";
+import $get from "./get.js";
+import $list from "./list.js";
+import $pause from "./pause.js";
+import $progress from "./progress.js";
+import $resume from "./resume.js";
+import $logs from "./logs/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "jobs",

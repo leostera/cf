@@ -1,10 +1,10 @@
-import $create from "./create/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * types command group
  * @generated from apis/overlays/cloudforce-one.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $create from "./create/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "types",

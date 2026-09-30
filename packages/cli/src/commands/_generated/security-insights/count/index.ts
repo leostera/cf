@@ -1,13 +1,13 @@
-import $byclass from "./by-class.js";
-import $bypartner from "./by-partner.js";
-import $byseverity from "./by-severity.js";
-import $bytype from "./by-type.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * count command group
  * @generated from apis/overlays/security-insights.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $byclass from "./by-class.js";
+import $bypartner from "./by-partner.js";
+import $byseverity from "./by-severity.js";
+import $bytype from "./by-type.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "count",

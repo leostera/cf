@@ -1,15 +1,15 @@
-import $active from "./active/index.js";
-import $control from "./control.js";
-import $get from "./get.js";
-import $list from "./list.js";
-import $start from "./start.js";
-import $tracks from "./tracks/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * recordings command group
  * @generated from apis/overlays/realtime.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $control from "./control.js";
+import $get from "./get.js";
+import $list from "./list.js";
+import $start from "./start.js";
+import $active from "./active/index.js";
+import $tracks from "./tracks/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "recordings",

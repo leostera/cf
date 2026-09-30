@@ -1,9 +1,9 @@
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * signed-url command
  * @generated from apis/overlays/signed-url.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "signed-url",

@@ -1,17 +1,17 @@
-import $create from "./create.js";
-import $delete from "./delete.js";
-import $get from "./get.js";
-import $list from "./list.js";
-import $phases from "./phases/index.js";
-import $rules from "./rules/index.js";
-import $update from "./update.js";
-import $versions from "./versions/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * account-rulesets command group
  * @generated from apis/overlays/rulesets.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $create from "./create.js";
+import $delete from "./delete.js";
+import $get from "./get.js";
+import $list from "./list.js";
+import $update from "./update.js";
+import $phases from "./phases/index.js";
+import $rules from "./rules/index.js";
+import $versions from "./versions/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "account-rulesets",

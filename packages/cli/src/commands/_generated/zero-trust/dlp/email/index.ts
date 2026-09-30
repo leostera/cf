@@ -1,11 +1,11 @@
-import $accountmapping from "./account-mapping/index.js";
-import $rules from "./rules/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * email command group
  * @generated from apis/overlays/zero-trust.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $accountmapping from "./account-mapping/index.js";
+import $rules from "./rules/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "email",

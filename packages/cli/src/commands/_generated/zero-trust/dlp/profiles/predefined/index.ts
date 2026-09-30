@@ -1,10 +1,10 @@
-import $update from "./update.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * predefined command group
  * @generated from apis/overlays/zero-trust.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $update from "./update.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "predefined",

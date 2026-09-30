@@ -1,13 +1,13 @@
-import $settings from "./settings/index.js";
-import $shadowhosts from "./shadow-hosts/index.js";
-import $shadowzonehosts from "./shadow-zone-hosts/index.js";
-import $shadowzones from "./shadow-zones/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * partners command group
  * @generated from apis/overlays/security-insights.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $settings from "./settings/index.js";
+import $shadowhosts from "./shadow-hosts/index.js";
+import $shadowzonehosts from "./shadow-zone-hosts/index.js";
+import $shadowzones from "./shadow-zones/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "partners",

@@ -1,13 +1,13 @@
-import $crawl from "./crawl/index.js";
-import $devtools from "./devtools/index.js";
-import $quickaction from "./quick-action/index.js";
-import $recording from "./recording/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * browser-run command
  * @generated from apis/overlays/browser-run.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $crawl from "./crawl/index.js";
+import $devtools from "./devtools/index.js";
+import $quickaction from "./quick-action/index.js";
+import $recording from "./recording/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "browser-run",

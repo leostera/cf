@@ -1,11 +1,11 @@
-import $export from "./export.js";
-import $list from "./list.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * content command group
  * @generated from apis/overlays/zero-trust.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $export from "./export.js";
+import $list from "./list.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "content",

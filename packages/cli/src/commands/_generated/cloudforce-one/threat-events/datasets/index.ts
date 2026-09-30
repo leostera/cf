@@ -1,14 +1,14 @@
-import $create from "./create.js";
-import $edit from "./edit.js";
-import $get from "./get.js";
-import $list from "./list.js";
-import $raw from "./raw.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * datasets command group
  * @generated from apis/overlays/cloudforce-one.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $create from "./create.js";
+import $edit from "./edit.js";
+import $get from "./get.js";
+import $list from "./list.js";
+import $raw from "./raw.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "datasets",

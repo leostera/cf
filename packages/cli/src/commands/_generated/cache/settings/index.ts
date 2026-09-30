@@ -1,13 +1,13 @@
-import $regionaltieredcache from "./regional-tiered-cache/index.js";
-import $reserve from "./reserve/index.js";
-import $smarttieredcache from "./smart-tiered-cache/index.js";
-import $variants from "./variants/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * settings command group
  * @generated from apis/overlays/cache.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $regionaltieredcache from "./regional-tiered-cache/index.js";
+import $reserve from "./reserve/index.js";
+import $smarttieredcache from "./smart-tiered-cache/index.js";
+import $variants from "./variants/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "settings",

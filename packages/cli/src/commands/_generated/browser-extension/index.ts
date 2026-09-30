@@ -1,9 +1,9 @@
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * browser-extension command
  * @generated from apis/overlays/browser-extension.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "browser-extension",

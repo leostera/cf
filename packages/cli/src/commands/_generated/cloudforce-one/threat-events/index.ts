@@ -1,25 +1,25 @@
-import $attackers from "./attackers/index.js";
-import $bulkcreate from "./bulk-create.js";
-import $categories from "./categories/index.js";
-import $countries from "./countries/index.js";
-import $create from "./create.js";
-import $datasets from "./datasets/index.js";
-import $edit from "./edit.js";
-import $eventtags from "./event-tags/index.js";
-import $get from "./get.js";
-import $indicatortypes from "./indicator-types/index.js";
-import $list from "./list.js";
-import $raw from "./raw/index.js";
-import $relate from "./relate/index.js";
-import $search from "./search.js";
-import $tags from "./tags/index.js";
-import $targetindustries from "./target-industries/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * threat-events command group
  * @generated from apis/overlays/cloudforce-one.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $bulkcreate from "./bulk-create.js";
+import $create from "./create.js";
+import $edit from "./edit.js";
+import $get from "./get.js";
+import $list from "./list.js";
+import $search from "./search.js";
+import $attackers from "./attackers/index.js";
+import $categories from "./categories/index.js";
+import $countries from "./countries/index.js";
+import $datasets from "./datasets/index.js";
+import $eventtags from "./event-tags/index.js";
+import $indicatortypes from "./indicator-types/index.js";
+import $raw from "./raw/index.js";
+import $relate from "./relate/index.js";
+import $tags from "./tags/index.js";
+import $targetindustries from "./target-industries/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "threat-events",

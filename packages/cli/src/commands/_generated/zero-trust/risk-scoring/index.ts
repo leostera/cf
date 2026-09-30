@@ -1,14 +1,14 @@
-import $behaviours from "./behaviours/index.js";
-import $get from "./get.js";
-import $integrations from "./integrations/index.js";
-import $reset from "./reset.js";
-import $summary from "./summary/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * risk-scoring command group
  * @generated from apis/overlays/zero-trust.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $get from "./get.js";
+import $reset from "./reset.js";
+import $behaviours from "./behaviours/index.js";
+import $integrations from "./integrations/index.js";
+import $summary from "./summary/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "risk-scoring",

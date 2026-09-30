@@ -1,10 +1,10 @@
-import $rule from "./rule.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * protection command group
  * @generated from apis/overlays/magic-transit.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $rule from "./rule.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "protection",

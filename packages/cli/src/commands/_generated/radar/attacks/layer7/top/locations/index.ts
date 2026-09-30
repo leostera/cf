@@ -1,11 +1,11 @@
-import $origin from "./origin.js";
-import $target from "./target.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * locations command group
  * @generated from apis/overlays/radar.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $origin from "./origin.js";
+import $target from "./target.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "locations",

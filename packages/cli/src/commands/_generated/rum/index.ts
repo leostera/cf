@@ -1,11 +1,11 @@
-import $rules from "./rules/index.js";
-import $siteinfo from "./site-info/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * rum command
  * @generated from apis/overlays/rum.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $rules from "./rules/index.js";
+import $siteinfo from "./site-info/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "rum",

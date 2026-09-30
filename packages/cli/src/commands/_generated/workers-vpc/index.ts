@@ -1,10 +1,10 @@
-import $services from "./services/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * workers-vpc command
  * @generated from apis/overlays/workers-vpc.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $services from "./services/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "workers-vpc",

@@ -1,13 +1,13 @@
-import $delete from "./delete.js";
-import $edit from "./edit.js";
-import $get from "./get.js";
-import $list from "./list/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * dnssec command group
  * @generated from apis/overlays/dns.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $delete from "./delete.js";
+import $edit from "./edit.js";
+import $get from "./get.js";
+import $list from "./list/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "dnssec",

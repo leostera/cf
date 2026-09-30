@@ -1,10 +1,10 @@
-import $planetscale from "./planetscale/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * integration command group
  * @generated from apis/overlays/hyperdrive.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $planetscale from "./planetscale/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "integration",

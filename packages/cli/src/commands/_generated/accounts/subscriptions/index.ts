@@ -1,3 +1,9 @@
+/**
+ * subscriptions command group
+ * @generated from apis/overlays/accounts.ts
+ */
+import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
 import $cancelDelayedDowngrade from "./cancelDelayedDowngrade.js";
 import $create from "./create.js";
 import $createCancelReason from "./createCancelReason.js";
@@ -6,12 +12,6 @@ import $get from "./get.js";
 import $getByIdentifier from "./getByIdentifier.js";
 import $getCancelReason from "./getCancelReason.js";
 import $update from "./update.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
-/**
- * subscriptions command group
- * @generated from apis/overlays/accounts.ts
- */
-import type { CommandModule } from "yargs";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "subscriptions",

@@ -1,11 +1,11 @@
-import $iqi from "./iqi/index.js";
-import $speed from "./speed/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * quality command group
  * @generated from apis/overlays/radar.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $iqi from "./iqi/index.js";
+import $speed from "./speed/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "quality",

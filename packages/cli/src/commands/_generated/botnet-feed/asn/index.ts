@@ -1,11 +1,11 @@
-import $dayreport from "./day-report.js";
-import $fullreport from "./full-report.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * asn command group
  * @generated from apis/overlays/botnet-feed.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $dayreport from "./day-report.js";
+import $fullreport from "./full-report.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "asn",

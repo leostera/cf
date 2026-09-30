@@ -1,10 +1,10 @@
-import $hostnames from "./hostnames/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * web3 command
  * @generated from apis/overlays/web3.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $hostnames from "./hostnames/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "web3",

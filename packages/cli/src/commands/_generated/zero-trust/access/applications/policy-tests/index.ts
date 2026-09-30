@@ -1,12 +1,12 @@
-import $create from "./create.js";
-import $get from "./get.js";
-import $users from "./users/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * policy-tests command group
  * @generated from apis/overlays/zero-trust.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $create from "./create.js";
+import $get from "./get.js";
+import $users from "./users/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "policy-tests",

@@ -1,10 +1,10 @@
-import $settings from "./settings/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * universal command group
  * @generated from apis/overlays/ssl.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $settings from "./settings/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "universal",

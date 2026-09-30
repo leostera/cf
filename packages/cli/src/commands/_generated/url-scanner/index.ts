@@ -1,11 +1,11 @@
-import $responses from "./responses/index.js";
-import $scans from "./scans/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * url-scanner command
  * @generated from apis/overlays/url-scanner.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $responses from "./responses/index.js";
+import $scans from "./scans/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "url-scanner",

@@ -1,17 +1,17 @@
-import $create from "./create.js";
-import $delete from "./delete.js";
-import $edit from "./edit.js";
-import $get from "./get.js";
-import $instances from "./instances/index.js";
-import $list from "./list.js";
-import $rollouts from "./rollouts/index.js";
-import $versions from "./versions/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * applications command group
  * @generated from apis/overlays/containers.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $create from "./create.js";
+import $delete from "./delete.js";
+import $edit from "./edit.js";
+import $get from "./get.js";
+import $list from "./list.js";
+import $instances from "./instances/index.js";
+import $rollouts from "./rollouts/index.js";
+import $versions from "./versions/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "applications",

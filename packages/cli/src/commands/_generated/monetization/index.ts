@@ -1,11 +1,11 @@
-import $accounteligibility from "./account-eligibility/index.js";
-import $rules from "./rules/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * monetization command
  * @generated from apis/overlays/monetization.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $accounteligibility from "./account-eligibility/index.js";
+import $rules from "./rules/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "monetization",

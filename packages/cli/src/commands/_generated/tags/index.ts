@@ -1,10 +1,10 @@
-import $resources from "./resources/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * tags command
  * @generated from apis/overlays/tags.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $resources from "./resources/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "tags",

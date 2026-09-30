@@ -1,9 +1,9 @@
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * domain-info command
  * @generated from apis/overlays/domain-info.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "domain-info",

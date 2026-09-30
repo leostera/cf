@@ -1,12 +1,12 @@
-import $delete from "./delete.js";
-import $edit from "./edit.js";
-import $get from "./get.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * variants command group
  * @generated from apis/overlays/cache.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $delete from "./delete.js";
+import $edit from "./edit.js";
+import $get from "./get.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "variants",

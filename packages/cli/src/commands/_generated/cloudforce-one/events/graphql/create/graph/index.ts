@@ -1,11 +1,11 @@
-import $ql from "./ql.js";
-import $qlv2 from "./qlv2.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * graph command group
  * @generated from apis/overlays/cloudforce-one.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $ql from "./ql.js";
+import $qlv2 from "./qlv2.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "graph",

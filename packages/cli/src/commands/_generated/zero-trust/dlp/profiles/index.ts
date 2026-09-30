@@ -1,13 +1,13 @@
-import $custom from "./custom/index.js";
-import $get from "./get.js";
-import $list from "./list.js";
-import $predefined from "./predefined/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * profiles command group
  * @generated from apis/overlays/zero-trust.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $get from "./get.js";
+import $list from "./list.js";
+import $custom from "./custom/index.js";
+import $predefined from "./predefined/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "profiles",

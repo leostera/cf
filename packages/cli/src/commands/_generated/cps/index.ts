@@ -1,11 +1,11 @@
-import $get from "./get.js";
-import $update from "./update.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * cps command
  * @generated from apis/overlays/cps.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $get from "./get.js";
+import $update from "./update.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "cps",

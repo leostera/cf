@@ -1,10 +1,10 @@
-import $support from "./support.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * tls command group
  * @generated from apis/overlays/radar.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $support from "./support.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "tls",

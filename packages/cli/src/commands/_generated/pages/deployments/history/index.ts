@@ -1,10 +1,10 @@
-import $logs from "./logs/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * history command group
  * @generated from apis/overlays/pages.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $logs from "./logs/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "history",

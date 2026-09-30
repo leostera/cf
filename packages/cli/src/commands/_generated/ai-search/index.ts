@@ -1,25 +1,25 @@
-import $chatcompletions from "./chat-completions.js";
-import $create from "./create.js";
-import $delete from "./delete.js";
-import $get from "./get.js";
-import $items from "./items/index.js";
-import $jobs from "./jobs/index.js";
-import $list from "./list.js";
-import $move from "./move.js";
-import $multichatcompletions from "./multi-chat-completions.js";
-import $multisearch from "./multi-search.js";
-import $namespace from "./namespace/index.js";
-import $purgecache from "./purge-cache.js";
-import $search from "./search.js";
-import $stats from "./stats.js";
-import $tokens from "./tokens/index.js";
-import $update from "./update.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * ai-search command
  * @generated from apis/overlays/ai-search.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $chatcompletions from "./chat-completions.js";
+import $create from "./create.js";
+import $delete from "./delete.js";
+import $get from "./get.js";
+import $list from "./list.js";
+import $move from "./move.js";
+import $multichatcompletions from "./multi-chat-completions.js";
+import $multisearch from "./multi-search.js";
+import $purgecache from "./purge-cache.js";
+import $search from "./search.js";
+import $stats from "./stats.js";
+import $update from "./update.js";
+import $items from "./items/index.js";
+import $jobs from "./jobs/index.js";
+import $namespace from "./namespace/index.js";
+import $tokens from "./tokens/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "ai-search",

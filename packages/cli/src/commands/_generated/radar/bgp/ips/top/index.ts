@@ -1,10 +1,10 @@
-import $ases from "./ases.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * top command group
  * @generated from apis/overlays/radar.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $ases from "./ases.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "top",

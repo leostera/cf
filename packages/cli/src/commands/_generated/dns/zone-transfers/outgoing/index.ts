@@ -1,17 +1,17 @@
+/**
+ * outgoing command group
+ * @generated from apis/overlays/dns.ts
+ */
+import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
 import $create from "./create.js";
 import $delete from "./delete.js";
 import $disable from "./disable.js";
 import $enable from "./enable.js";
 import $forcenotify from "./force-notify.js";
 import $get from "./get.js";
-import $status from "./status/index.js";
 import $update from "./update.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
-/**
- * outgoing command group
- * @generated from apis/overlays/dns.ts
- */
-import type { CommandModule } from "yargs";
+import $status from "./status/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "outgoing",

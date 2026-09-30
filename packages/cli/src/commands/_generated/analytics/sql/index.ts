@@ -1,12 +1,12 @@
-import $get from "./get.js";
-import $introspection from "./introspection/index.js";
-import $post from "./post.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * sql command group
  * @generated from apis/overlays/analytics.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $get from "./get.js";
+import $post from "./post.js";
+import $introspection from "./introspection/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "sql",

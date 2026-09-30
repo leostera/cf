@@ -1,12 +1,12 @@
-import $analytics from "./analytics/index.js";
-import $apps from "./apps/index.js";
-import $protocols from "./protocols/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * spectrum command
  * @generated from apis/overlays/spectrum.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $analytics from "./analytics/index.js";
+import $apps from "./apps/index.js";
+import $protocols from "./protocols/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "spectrum",

@@ -1,12 +1,12 @@
-import $configs from "./configs/index.js";
-import $rules from "./rules/index.js";
-import $vpcflows from "./vpc-flows/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * magic-network-monitoring command
  * @generated from apis/overlays/magic-network-monitoring.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $configs from "./configs/index.js";
+import $rules from "./rules/index.js";
+import $vpcflows from "./vpc-flows/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "magic-network-monitoring",

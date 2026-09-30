@@ -1,3 +1,9 @@
+/**
+ * email-security command
+ * @generated from apis/overlays/email-security.ts
+ */
+import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
 import $allowpolicies from "./allow-policies/index.js";
 import $analytics from "./analytics/index.js";
 import $blocksenders from "./block-senders/index.js";
@@ -11,12 +17,6 @@ import $sendingdomainrestrictions from "./sending-domain-restrictions/index.js";
 import $submissions from "./submissions/index.js";
 import $trusteddomains from "./trusted-domains/index.js";
 import $urlignorepatterns from "./url-ignore-patterns/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
-/**
- * email-security command
- * @generated from apis/overlays/email-security.ts
- */
-import type { CommandModule } from "yargs";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "email-security",

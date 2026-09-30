@@ -1,11 +1,11 @@
-import $timeseries from "./timeseries.js";
-import $top from "./top/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * ips command group
  * @generated from apis/overlays/radar.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $timeseries from "./timeseries.js";
+import $top from "./top/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "ips",

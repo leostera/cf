@@ -1,9 +1,9 @@
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * rate-limits command
  * @generated from apis/overlays/rate-limits.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "rate-limits",

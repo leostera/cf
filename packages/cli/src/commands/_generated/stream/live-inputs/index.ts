@@ -1,18 +1,18 @@
+/**
+ * live-inputs command group
+ * @generated from apis/overlays/stream.ts
+ */
+import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
 import $create from "./create.js";
 import $delete from "./delete.js";
 import $disable from "./disable.js";
 import $enable from "./enable.js";
 import $get from "./get.js";
 import $list from "./list.js";
-import $outputs from "./outputs/index.js";
 import $rotatekeys from "./rotate-keys.js";
 import $update from "./update.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
-/**
- * live-inputs command group
- * @generated from apis/overlays/stream.ts
- */
-import type { CommandModule } from "yargs";
+import $outputs from "./outputs/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "live-inputs",

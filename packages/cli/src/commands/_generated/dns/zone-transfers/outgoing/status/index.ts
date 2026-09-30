@@ -1,10 +1,10 @@
-import $get from "./get.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * status command group
  * @generated from apis/overlays/dns.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $get from "./get.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "status",

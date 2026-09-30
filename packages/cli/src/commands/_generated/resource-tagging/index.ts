@@ -1,10 +1,10 @@
-import $summary from "./summary/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * resource-tagging command
  * @generated from apis/overlays/resource-tagging.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $summary from "./summary/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "resource-tagging",

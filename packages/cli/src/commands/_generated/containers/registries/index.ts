@@ -1,13 +1,13 @@
-import $create from "./create.js";
-import $credentials from "./credentials/index.js";
-import $delete from "./delete.js";
-import $list from "./list.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * registries command group
  * @generated from apis/overlays/containers.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $create from "./create.js";
+import $delete from "./delete.js";
+import $list from "./list.js";
+import $credentials from "./credentials/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "registries",

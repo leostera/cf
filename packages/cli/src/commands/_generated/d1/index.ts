@@ -1,3 +1,9 @@
+/**
+ * d1 command
+ * @generated from apis/overlays/d1.ts
+ */
+import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
 import $create from "./create.js";
 import $delete from "./delete.js";
 import $edit from "./edit.js";
@@ -5,15 +11,9 @@ import $get from "./get.js";
 import $list from "./list.js";
 import $query from "./query.js";
 import $raw from "./raw.js";
-import $timetravel from "./time-travel/index.js";
 import $update from "./update.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
-/**
- * d1 command
- * @generated from apis/overlays/d1.ts
- */
-import type { CommandModule } from "yargs";
 import $migrations from "#commands/d1/migrations/index.js";
+import $timetravel from "./time-travel/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "d1",

@@ -1,10 +1,10 @@
-import $hostnameassociations from "./hostname-associations/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * certificate-authorities command
  * @generated from apis/overlays/certificate-authorities.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $hostnameassociations from "./hostname-associations/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "certificate-authorities",

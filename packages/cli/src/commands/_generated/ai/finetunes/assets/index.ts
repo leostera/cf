@@ -1,11 +1,11 @@
-import $create from "./create.js";
-import $download from "./download.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * assets command group
  * @generated from apis/overlays/ai.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $create from "./create.js";
+import $download from "./download.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "assets",

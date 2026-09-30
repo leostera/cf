@@ -1,13 +1,13 @@
-import $schemavalidation from "./schema-validation/index.js";
-import $sessionidentifiers from "./session-identifiers/index.js";
-import $tokenvalidation from "./token-validation/index.js";
-import $vulnerabilityscanner from "./vulnerability-scanner/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * api-security command
  * @generated from apis/overlays/api-security.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $schemavalidation from "./schema-validation/index.js";
+import $sessionidentifiers from "./session-identifiers/index.js";
+import $tokenvalidation from "./token-validation/index.js";
+import $vulnerabilityscanner from "./vulnerability-scanner/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "api-security",

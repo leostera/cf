@@ -1,13 +1,13 @@
-import $aggregates from "./aggregates/index.js";
-import $get from "./get.js";
-import $list from "./list.js";
-import $overtime from "./over-time/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * devices command group
  * @generated from apis/overlays/zero-trust.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $get from "./get.js";
+import $list from "./list.js";
+import $aggregates from "./aggregates/index.js";
+import $overtime from "./over-time/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "devices",

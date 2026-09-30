@@ -1,14 +1,14 @@
-import $bulk from "./bulk.js";
-import $delete from "./delete.js";
-import $get from "./get.js";
-import $list from "./list.js";
-import $update from "./update.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * secrets command group
  * @generated from apis/overlays/workers.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $bulk from "./bulk.js";
+import $delete from "./delete.js";
+import $get from "./get.js";
+import $list from "./list.js";
+import $update from "./update.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "secrets",

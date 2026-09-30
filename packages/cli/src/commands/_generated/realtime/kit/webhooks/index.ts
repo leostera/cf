@@ -1,16 +1,16 @@
-import $create from "./create.js";
-import $delete from "./delete.js";
-import $events from "./events/index.js";
-import $get from "./get.js";
-import $list from "./list.js";
-import $replace from "./replace.js";
-import $update from "./update.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * webhooks command group
  * @generated from apis/overlays/realtime.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $create from "./create.js";
+import $delete from "./delete.js";
+import $get from "./get.js";
+import $list from "./list.js";
+import $replace from "./replace.js";
+import $update from "./update.js";
+import $events from "./events/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "webhooks",

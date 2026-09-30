@@ -1,14 +1,14 @@
-import $create from "./create.js";
-import $delete from "./delete.js";
-import $edit from "./edit.js";
-import $get from "./get.js";
-import $list from "./list.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * sending-domain-restrictions command group
  * @generated from apis/overlays/email-security.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $create from "./create.js";
+import $delete from "./delete.js";
+import $edit from "./edit.js";
+import $get from "./get.js";
+import $list from "./list.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "sending-domain-restrictions",

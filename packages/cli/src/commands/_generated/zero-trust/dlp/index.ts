@@ -1,3 +1,9 @@
+/**
+ * dlp command group
+ * @generated from apis/overlays/zero-trust.ts
+ */
+import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
 import $customprompttopics from "./custom-prompt-topics/index.js";
 import $dataclasses from "./data-classes/index.js";
 import $datatagcategories from "./data-tag-categories/index.js";
@@ -14,12 +20,6 @@ import $sensitivitygrouptemplates from "./sensitivity-group-templates/index.js";
 import $sensitivitygroups from "./sensitivity-groups/index.js";
 import $sensitivitylevels from "./sensitivity-levels/index.js";
 import $settings from "./settings/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
-/**
- * dlp command group
- * @generated from apis/overlays/zero-trust.ts
- */
-import type { CommandModule } from "yargs";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "dlp",

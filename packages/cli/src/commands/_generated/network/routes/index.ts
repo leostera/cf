@@ -1,12 +1,12 @@
-import $cidr from "./cidr/index.js";
-import $hostname from "./hostname/index.js";
-import $resolve from "./resolve.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * routes command group
  * @generated from apis/overlays/network.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $resolve from "./resolve.js";
+import $cidr from "./cidr/index.js";
+import $hostname from "./hostname/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "routes",

@@ -1,10 +1,10 @@
-import $stripe from "./stripe/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * publisher command group
  * @generated from apis/overlays/pay-per-crawl.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $stripe from "./stripe/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "publisher",

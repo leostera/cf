@@ -1,16 +1,16 @@
-import $create from "./create.js";
-import $delete from "./delete.js";
-import $get from "./get.js";
-import $list from "./list.js";
-import $loadefaultname from "./loa-default-name.js";
-import $loa from "./loa.js";
-import $status from "./status.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * interconnects command group
  * @generated from apis/overlays/network-interconnects.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $create from "./create.js";
+import $delete from "./delete.js";
+import $get from "./get.js";
+import $list from "./list.js";
+import $loa from "./loa.js";
+import $loadefaultname from "./loa-default-name.js";
+import $status from "./status.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "interconnects",

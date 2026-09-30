@@ -1,3 +1,9 @@
+/**
+ * pay-per-crawl command
+ * @generated from apis/overlays/pay-per-crawl.ts
+ */
+import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
 import $config from "./config/index.js";
 import $crawler from "./crawler/index.js";
 import $crawlers from "./crawlers/index.js";
@@ -5,12 +11,6 @@ import $payperuse from "./pay-per-use/index.js";
 import $publisher from "./publisher/index.js";
 import $terms from "./terms/index.js";
 import $zones from "./zones/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
-/**
- * pay-per-crawl command
- * @generated from apis/overlays/pay-per-crawl.ts
- */
-import type { CommandModule } from "yargs";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "pay-per-crawl",

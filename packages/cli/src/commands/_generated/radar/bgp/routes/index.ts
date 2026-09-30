@@ -1,16 +1,16 @@
-import $ases from "./ases.js";
-import $moas from "./moas.js";
-import $paths from "./paths/index.js";
-import $pfx2as from "./pfx2as.js";
-import $realtime from "./realtime.js";
-import $stats from "./stats.js";
-import $upstreams from "./upstreams/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * routes command group
  * @generated from apis/overlays/radar.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $ases from "./ases.js";
+import $moas from "./moas.js";
+import $pfx2as from "./pfx2as.js";
+import $realtime from "./realtime.js";
+import $stats from "./stats.js";
+import $paths from "./paths/index.js";
+import $upstreams from "./upstreams/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "routes",

@@ -1,11 +1,11 @@
-import $get from "./get.js";
-import $patch from "./patch.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * automatic-upgrader command group
  * @generated from apis/overlays/ssl.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $get from "./get.js";
+import $patch from "./patch.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "automatic-upgrader",

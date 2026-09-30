@@ -1,10 +1,10 @@
-import $eligibility from "./eligibility.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * appeals command group
  * @generated from apis/overlays/abuse-reports.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $eligibility from "./eligibility.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "appeals",

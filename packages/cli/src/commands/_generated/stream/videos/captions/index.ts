@@ -1,11 +1,11 @@
-import $language from "./language/index.js";
-import $list from "./list.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * captions command group
  * @generated from apis/overlays/stream.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $list from "./list.js";
+import $language from "./language/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "captions",

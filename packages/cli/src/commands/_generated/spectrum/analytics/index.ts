@@ -1,12 +1,12 @@
-import $aggregates from "./aggregates/index.js";
-import $events from "./events/index.js";
-import $zones from "./zones/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * analytics command group
  * @generated from apis/overlays/spectrum.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $aggregates from "./aggregates/index.js";
+import $events from "./events/index.js";
+import $zones from "./zones/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "analytics",

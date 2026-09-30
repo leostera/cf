@@ -1,11 +1,11 @@
-import $endpointhealthchecks from "./endpoint-healthchecks/index.js";
-import $traceroutes from "./traceroutes/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * diagnostics command
  * @generated from apis/overlays/diagnostics.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $endpointhealthchecks from "./endpoint-healthchecks/index.js";
+import $traceroutes from "./traceroutes/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "diagnostics",

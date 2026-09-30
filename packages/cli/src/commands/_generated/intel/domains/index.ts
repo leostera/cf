@@ -1,11 +1,11 @@
-import $bulks from "./bulks/index.js";
-import $get from "./get.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * domains command group
  * @generated from apis/overlays/intel.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $get from "./get.js";
+import $bulks from "./bulks/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "domains",

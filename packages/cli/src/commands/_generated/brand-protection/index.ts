@@ -1,16 +1,16 @@
-import $logomatches from "./logo-matches/index.js";
-import $logos from "./logos/index.js";
-import $matches from "./matches/index.js";
-import $queries from "./queries/index.js";
-import $submit from "./submit.js";
-import $trial from "./trial/index.js";
-import $urlinfo from "./url-info.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * brand-protection command
  * @generated from apis/overlays/brand-protection.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $submit from "./submit.js";
+import $urlinfo from "./url-info.js";
+import $logomatches from "./logo-matches/index.js";
+import $logos from "./logos/index.js";
+import $matches from "./matches/index.js";
+import $queries from "./queries/index.js";
+import $trial from "./trial/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "brand-protection",

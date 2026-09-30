@@ -1,12 +1,12 @@
-import $detections from "./detections/index.js";
-import $get from "./get.js";
-import $update from "./update.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * leaked-credential-checks command
  * @generated from apis/overlays/leaked-credential-checks.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $get from "./get.js";
+import $update from "./update.js";
+import $detections from "./detections/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "leaked-credential-checks",

@@ -1,18 +1,18 @@
-import $create from "./create.js";
-import $data from "./data.js";
-import $downloads from "./downloads/index.js";
-import $get from "./get.js";
-import $list from "./list.js";
-import $permissions from "./permissions/index.js";
-import $providers from "./providers/index.js";
-import $snapshots from "./snapshots/index.js";
-import $update from "./update.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * indicator-feeds command group
  * @generated from apis/overlays/intel.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $create from "./create.js";
+import $data from "./data.js";
+import $get from "./get.js";
+import $list from "./list.js";
+import $update from "./update.js";
+import $downloads from "./downloads/index.js";
+import $permissions from "./permissions/index.js";
+import $providers from "./providers/index.js";
+import $snapshots from "./snapshots/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "indicator-feeds",

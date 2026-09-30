@@ -1,12 +1,12 @@
-import $authmethods from "./auth-methods/index.js";
-import $get from "./get.js";
-import $list from "./list.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * applications command group
  * @generated from apis/overlays/zero-trust.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $get from "./get.js";
+import $list from "./list.js";
+import $authmethods from "./auth-methods/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "applications",

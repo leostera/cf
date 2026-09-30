@@ -1,17 +1,17 @@
-import $articles from "./articles/index.js";
-import $categories from "./categories/index.js";
-import $curatedfeeds from "./curated-feeds/index.js";
-import $feeds from "./feeds/index.js";
-import $health from "./health.js";
-import $indicators from "./indicators/index.js";
-import $search from "./search.js";
-import $skills from "./skills/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * threat-signals command group
  * @generated from apis/overlays/cloudforce-one.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $health from "./health.js";
+import $search from "./search.js";
+import $articles from "./articles/index.js";
+import $categories from "./categories/index.js";
+import $curatedfeeds from "./curated-feeds/index.js";
+import $feeds from "./feeds/index.js";
+import $indicators from "./indicators/index.js";
+import $skills from "./skills/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "threat-signals",

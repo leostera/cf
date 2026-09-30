@@ -1,17 +1,17 @@
-import $constants from "./constants/index.js";
-import $create from "./create.js";
-import $delete from "./delete.js";
-import $get from "./get.js";
-import $interests from "./interests/index.js";
-import $list from "./list.js";
-import $quota from "./quota/index.js";
-import $update from "./update.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * priority-intelligence command group
  * @generated from apis/overlays/cloudforce-one.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $create from "./create.js";
+import $delete from "./delete.js";
+import $get from "./get.js";
+import $list from "./list.js";
+import $update from "./update.js";
+import $constants from "./constants/index.js";
+import $interests from "./interests/index.js";
+import $quota from "./quota/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "priority-intelligence",

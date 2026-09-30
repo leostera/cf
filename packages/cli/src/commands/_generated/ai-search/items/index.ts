@@ -1,3 +1,9 @@
+/**
+ * items command group
+ * @generated from apis/overlays/ai-search.ts
+ */
+import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
 import $chunks from "./chunks.js";
 import $delete from "./delete.js";
 import $download from "./download.js";
@@ -7,12 +13,6 @@ import $logs from "./logs.js";
 import $sync from "./sync.js";
 import $upload from "./upload.js";
 import $upsert from "./upsert.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
-/**
- * items command group
- * @generated from apis/overlays/ai-search.ts
- */
-import type { CommandModule } from "yargs";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "items",

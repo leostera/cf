@@ -1,10 +1,10 @@
-import type { CommonYargsOptions, InferArgs } from "#lib/cli-types.js";
-import type { ArgClassification } from "#lib/telemetry/index.js";
 /**
  * update command
  * @generated from apis/overlays/account-tags.ts
  */
 import type { Argv, CommandModule } from "yargs";
+import type { CommonYargsOptions, InferArgs } from "#lib/cli-types.js";
+import type { ArgClassification } from "#lib/telemetry/index.js";
 import {
 	createCommandClient,
 	getAccountId,
@@ -12,17 +12,17 @@ import {
 	requestApi,
 	resolveAccountIdSilent,
 } from "#lib/auth.js";
-import { compactBody, parseBody, setNestedValue } from "#lib/body-parser.js";
-import { formatDryRun } from "#lib/dry-run.js";
-import { resolveFileToken } from "#lib/input-validation.js";
 import { LOCAL_ACCOUNT_ID } from "#lib/local.js";
 import { formatOutput } from "#lib/output.js";
+import { formatDryRun } from "#lib/dry-run.js";
 import { withProgress } from "#lib/progress.js";
+import { runWithTelemetry } from "#lib/telemetry/index.js";
+import { resolveFileToken } from "#lib/input-validation.js";
+import { compactBody, parseBody, setNestedValue } from "#lib/body-parser.js";
 import {
 	promptForRequiredEnumField,
 	promptForRequiredField,
 } from "#lib/prompt.js";
-import { runWithTelemetry } from "#lib/telemetry/index.js";
 
 function builder(yargs: Argv<CommonYargsOptions>) {
 	return yargs

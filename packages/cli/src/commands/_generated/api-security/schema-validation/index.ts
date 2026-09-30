@@ -1,11 +1,11 @@
-import $schemas from "./schemas/index.js";
-import $settings from "./settings/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * schema-validation command group
  * @generated from apis/overlays/api-security.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $schemas from "./schemas/index.js";
+import $settings from "./settings/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "schema-validation",

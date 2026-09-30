@@ -1,13 +1,13 @@
-import $kit from "./kit/index.js";
-import $moq from "./moq/index.js";
-import $sfu from "./sfu/index.js";
-import $turn from "./turn/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * realtime command
  * @generated from apis/overlays/realtime.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $kit from "./kit/index.js";
+import $moq from "./moq/index.js";
+import $sfu from "./sfu/index.js";
+import $turn from "./turn/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "realtime",

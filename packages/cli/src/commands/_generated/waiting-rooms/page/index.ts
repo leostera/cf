@@ -1,10 +1,10 @@
-import $preview from "./preview.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * page command group
  * @generated from apis/overlays/waiting-rooms.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $preview from "./preview.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "page",

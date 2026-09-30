@@ -1,10 +1,10 @@
-import $summary from "./summary.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * agent-readiness command group
  * @generated from apis/overlays/radar.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $summary from "./summary.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "agent-readiness",

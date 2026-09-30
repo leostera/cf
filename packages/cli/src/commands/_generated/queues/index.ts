@@ -1,19 +1,19 @@
-import $consumers from "./consumers/index.js";
-import $create from "./create.js";
-import $delete from "./delete.js";
-import $edit from "./edit.js";
-import $get from "./get.js";
-import $list from "./list.js";
-import $messages from "./messages/index.js";
-import $metrics from "./metrics/index.js";
-import $purge from "./purge/index.js";
-import $subscriptions from "./subscriptions/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * queues command
  * @generated from apis/overlays/queues.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $create from "./create.js";
+import $delete from "./delete.js";
+import $edit from "./edit.js";
+import $get from "./get.js";
+import $list from "./list.js";
+import $consumers from "./consumers/index.js";
+import $messages from "./messages/index.js";
+import $metrics from "./metrics/index.js";
+import $purge from "./purge/index.js";
+import $subscriptions from "./subscriptions/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "queues",

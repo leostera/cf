@@ -1,11 +1,11 @@
-import $contentfindings from "./content-findings/index.js";
-import $findings from "./findings/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * data-security command group
  * @generated from apis/overlays/analytics.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $contentfindings from "./content-findings/index.js";
+import $findings from "./findings/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "data-security",

@@ -1,5 +1,10 @@
+/**
+ * issues command group
+ * @generated from apis/overlays/observability.ts
+ */
+import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
 import $add from "./add.js";
-import $automations from "./automations/index.js";
 import $get from "./get.js";
 import $group from "./group.js";
 import $list from "./list.js";
@@ -9,12 +14,7 @@ import $remove from "./remove.js";
 import $summary from "./summary.js";
 import $ungroup from "./ungroup.js";
 import $update from "./update.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
-/**
- * issues command group
- * @generated from apis/overlays/observability.ts
- */
-import type { CommandModule } from "yargs";
+import $automations from "./automations/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "issues",

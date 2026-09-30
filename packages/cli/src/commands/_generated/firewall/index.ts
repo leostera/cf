@@ -1,12 +1,12 @@
-import $accessrules from "./access-rules/index.js";
-import $lockdowns from "./lockdowns/index.js";
-import $uarules from "./ua-rules/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * firewall command
  * @generated from apis/overlays/firewall.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $accessrules from "./access-rules/index.js";
+import $lockdowns from "./lockdowns/index.js";
+import $uarules from "./ua-rules/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "firewall",

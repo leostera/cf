@@ -1,11 +1,11 @@
-import $get from "./get.js";
-import $update from "./update.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * origin-post-quantum-encryption command
  * @generated from apis/overlays/origin-post-quantum-encryption.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $get from "./get.js";
+import $update from "./update.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "origin-post-quantum-encryption",

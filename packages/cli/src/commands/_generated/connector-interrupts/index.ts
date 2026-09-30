@@ -1,11 +1,11 @@
-import $create from "./create.js";
-import $list from "./list.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * connector-interrupts command
  * @generated from apis/overlays/connector-interrupts.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $create from "./create.js";
+import $list from "./list.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "connector-interrupts",

@@ -1,12 +1,12 @@
-import $destinationexistsdelete from "./destination-exists-delete.js";
-import $destination from "./destination/index.js";
-import $origin from "./origin/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * account-validate command group
  * @generated from apis/overlays/logpush.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $destinationexistsdelete from "./destination-exists-delete.js";
+import $destination from "./destination/index.js";
+import $origin from "./origin/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "account-validate",

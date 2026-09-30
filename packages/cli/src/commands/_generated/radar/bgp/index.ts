@@ -1,16 +1,16 @@
-import $hijacks from "./hijacks/index.js";
-import $ips from "./ips/index.js";
-import $leaks from "./leaks/index.js";
-import $routes from "./routes/index.js";
-import $rpki from "./rpki/index.js";
-import $timeseries from "./timeseries.js";
-import $top from "./top/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * bgp command group
  * @generated from apis/overlays/radar.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $timeseries from "./timeseries.js";
+import $hijacks from "./hijacks/index.js";
+import $ips from "./ips/index.js";
+import $leaks from "./leaks/index.js";
+import $routes from "./routes/index.js";
+import $rpki from "./rpki/index.js";
+import $top from "./top/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "bgp",

@@ -1,10 +1,10 @@
-import $apps from "./apps/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * sfu command group
  * @generated from apis/overlays/realtime.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $apps from "./apps/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "sfu",

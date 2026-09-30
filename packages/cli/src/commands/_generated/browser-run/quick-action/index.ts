@@ -1,3 +1,9 @@
+/**
+ * quick-action command group
+ * @generated from apis/overlays/browser-run.ts
+ */
+import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
 import $accessibilitytree from "./accessibility-tree.js";
 import $content from "./content.js";
 import $json from "./json.js";
@@ -7,12 +13,6 @@ import $pdf from "./pdf.js";
 import $scrape from "./scrape.js";
 import $screenshot from "./screenshot.js";
 import $snapshot from "./snapshot.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
-/**
- * quick-action command group
- * @generated from apis/overlays/browser-run.ts
- */
-import type { CommandModule } from "yargs";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "quick-action",

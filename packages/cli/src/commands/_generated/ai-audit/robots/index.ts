@@ -1,11 +1,11 @@
-import $bulkget from "./bulk-get.js";
-import $get from "./get.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * robots command group
  * @generated from apis/overlays/ai-audit.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $bulkget from "./bulk-get.js";
+import $get from "./get.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "robots",

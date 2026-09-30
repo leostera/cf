@@ -1,10 +1,10 @@
-import $widgets from "./widgets/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * turnstile command
  * @generated from apis/overlays/turnstile.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $widgets from "./widgets/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "turnstile",

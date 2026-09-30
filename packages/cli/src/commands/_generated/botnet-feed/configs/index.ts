@@ -1,10 +1,10 @@
-import $asn from "./asn/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * configs command group
  * @generated from apis/overlays/botnet-feed.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $asn from "./asn/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "configs",

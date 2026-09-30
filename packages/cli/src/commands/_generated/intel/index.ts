@@ -1,3 +1,9 @@
+/**
+ * intel command
+ * @generated from apis/overlays/intel.ts
+ */
+import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
 import $asn from "./asn/index.js";
 import $attacksurfacereport from "./attack-surface-report/index.js";
 import $dns from "./dns/index.js";
@@ -10,12 +16,6 @@ import $miscategorizations from "./miscategorizations/index.js";
 import $sinkholes from "./sinkholes/index.js";
 import $urls from "./urls/index.js";
 import $whois from "./whois/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
-/**
- * intel command
- * @generated from apis/overlays/intel.ts
- */
-import type { CommandModule } from "yargs";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "intel",

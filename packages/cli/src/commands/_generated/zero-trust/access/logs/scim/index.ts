@@ -1,10 +1,10 @@
-import $updates from "./updates/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * scim command group
  * @generated from apis/overlays/zero-trust.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $updates from "./updates/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "scim",

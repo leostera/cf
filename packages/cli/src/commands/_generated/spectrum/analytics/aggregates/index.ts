@@ -1,10 +1,10 @@
-import $currents from "./currents/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * aggregates command group
  * @generated from apis/overlays/spectrum.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $currents from "./currents/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "aggregates",

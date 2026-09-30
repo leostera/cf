@@ -1,13 +1,13 @@
-import $create from "./create.js";
-import $delete from "./delete.js";
-import $get from "./get.js";
-import $validate from "./validate.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * ownership command group
  * @generated from apis/overlays/magic-transit.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $create from "./create.js";
+import $delete from "./delete.js";
+import $get from "./get.js";
+import $validate from "./validate.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "ownership",

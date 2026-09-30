@@ -1,10 +1,10 @@
-import $update from "./update.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * invite command group
  * @generated from apis/overlays/organization.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $update from "./update.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "invite",

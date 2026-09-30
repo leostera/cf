@@ -1,11 +1,11 @@
-import $create from "./create.js";
-import $delete from "./delete.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * logos command
  * @generated from apis/overlays/logos.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $create from "./create.js";
+import $delete from "./delete.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "logos",

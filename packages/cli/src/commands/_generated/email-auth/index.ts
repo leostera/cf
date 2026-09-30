@@ -1,11 +1,11 @@
-import $dmarcreports from "./dmarc-reports/index.js";
-import $spf from "./spf/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * email-auth command
  * @generated from apis/overlays/email-auth.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $dmarcreports from "./dmarc-reports/index.js";
+import $spf from "./spf/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "email-auth",

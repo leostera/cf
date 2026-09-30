@@ -1,13 +1,13 @@
-import $getsignaturelink from "./get-signature-link.js";
-import $getsignature from "./get-signature.js";
-import $get from "./get.js";
-import $sendsignatureevent from "./send-signature-event.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * terms command group
  * @generated from apis/overlays/pay-per-crawl.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $get from "./get.js";
+import $getsignature from "./get-signature.js";
+import $getsignaturelink from "./get-signature-link.js";
+import $sendsignatureevent from "./send-signature-event.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "terms",

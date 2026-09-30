@@ -1,12 +1,12 @@
-import $routes from "./routes/index.js";
-import $subnets from "./subnets/index.js";
-import $virtualnetworks from "./virtual-networks/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * network command
  * @generated from apis/overlays/network.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $routes from "./routes/index.js";
+import $subnets from "./subnets/index.js";
+import $virtualnetworks from "./virtual-networks/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "network",

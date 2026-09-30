@@ -1,11 +1,11 @@
-import $http from "./http/index.js";
-import $traceroute from "./traceroute/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * test-results command group
  * @generated from apis/overlays/zero-trust.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $http from "./http/index.js";
+import $traceroute from "./traceroute/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "test-results",

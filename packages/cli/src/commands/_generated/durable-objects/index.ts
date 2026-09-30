@@ -1,10 +1,10 @@
-import $namespaces from "./namespaces/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * durable-objects command
  * @generated from apis/overlays/durable-objects.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $namespaces from "./namespaces/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "durable-objects",

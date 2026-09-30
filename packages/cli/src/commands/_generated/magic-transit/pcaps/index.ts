@@ -1,15 +1,15 @@
-import $create from "./create.js";
-import $download from "./download/index.js";
-import $get from "./get.js";
-import $list from "./list.js";
-import $ownership from "./ownership/index.js";
-import $stop from "./stop.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * pcaps command group
  * @generated from apis/overlays/magic-transit.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $create from "./create.js";
+import $get from "./get.js";
+import $list from "./list.js";
+import $stop from "./stop.js";
+import $download from "./download/index.js";
+import $ownership from "./ownership/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "pcaps",

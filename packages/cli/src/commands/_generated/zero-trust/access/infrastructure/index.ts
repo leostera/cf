@@ -1,10 +1,10 @@
-import $sshca from "./ssh-ca/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * infrastructure command group
  * @generated from apis/overlays/zero-trust.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $sshca from "./ssh-ca/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "infrastructure",

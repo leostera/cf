@@ -1,18 +1,18 @@
-import $connect from "./connect.js";
-import $create from "./create.js";
-import $delete from "./delete.js";
-import $launch from "./launch.js";
-import $liveview from "./live-view/index.js";
-import $page from "./page/index.js";
-import $protocol from "./protocol.js";
-import $targets from "./targets/index.js";
-import $version from "./version.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * browser command group
  * @generated from apis/overlays/browser-run.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $connect from "./connect.js";
+import $create from "./create.js";
+import $delete from "./delete.js";
+import $launch from "./launch.js";
+import $protocol from "./protocol.js";
+import $version from "./version.js";
+import $liveview from "./live-view/index.js";
+import $page from "./page/index.js";
+import $targets from "./targets/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "browser",

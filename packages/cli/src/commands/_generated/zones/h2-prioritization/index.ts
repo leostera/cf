@@ -1,11 +1,11 @@
-import $edit from "./edit.js";
-import $get from "./get.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * h2-prioritization command group
  * @generated from apis/overlays/zones.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $edit from "./edit.js";
+import $get from "./get.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "h2-prioritization",

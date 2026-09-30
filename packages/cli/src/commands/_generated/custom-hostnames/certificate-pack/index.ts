@@ -1,10 +1,10 @@
-import $certificates from "./certificates/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * certificate-pack command group
  * @generated from apis/overlays/custom-hostnames.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $certificates from "./certificates/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "certificate-pack",

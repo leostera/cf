@@ -1,23 +1,23 @@
-import $approvals from "./approvals/index.js";
-import $create from "./create.js";
-import $delete from "./delete.js";
-import $deleteAll from "./deleteAll.js";
-import $email from "./email/index.js";
-import $exemptions from "./exemptions/index.js";
-import $get from "./get.js";
-import $list from "./list.js";
-import $managed from "./managed/index.js";
-import $search from "./search.js";
-import $stats from "./stats/index.js";
-import $tree from "./tree/index.js";
-import $update from "./update.js";
-import $validate from "./validate.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * rules command group
  * @generated from apis/overlays/cloudforce-one.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $create from "./create.js";
+import $delete from "./delete.js";
+import $deleteAll from "./deleteAll.js";
+import $get from "./get.js";
+import $list from "./list.js";
+import $search from "./search.js";
+import $update from "./update.js";
+import $validate from "./validate.js";
+import $approvals from "./approvals/index.js";
+import $email from "./email/index.js";
+import $exemptions from "./exemptions/index.js";
+import $managed from "./managed/index.js";
+import $stats from "./stats/index.js";
+import $tree from "./tree/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "rules",

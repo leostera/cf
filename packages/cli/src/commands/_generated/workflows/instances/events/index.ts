@@ -1,10 +1,10 @@
-import $send from "./send.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * events command group
  * @generated from apis/overlays/workflows.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $send from "./send.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "events",

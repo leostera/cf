@@ -1,11 +1,11 @@
-import $create from "./create/index.js";
-import $get from "./get.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * relationships command group
  * @generated from apis/overlays/cloudforce-one.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $get from "./get.js";
+import $create from "./create/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "relationships",

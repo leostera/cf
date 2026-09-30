@@ -1,10 +1,10 @@
-import $keys from "./keys/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * turn command group
  * @generated from apis/overlays/realtime.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $keys from "./keys/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "turn",

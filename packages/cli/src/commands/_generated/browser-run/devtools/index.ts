@@ -1,12 +1,12 @@
-import $browser from "./browser/index.js";
-import $json from "./json/index.js";
-import $session from "./session/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * devtools command group
  * @generated from apis/overlays/browser-run.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $browser from "./browser/index.js";
+import $json from "./json/index.js";
+import $session from "./session/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "devtools",

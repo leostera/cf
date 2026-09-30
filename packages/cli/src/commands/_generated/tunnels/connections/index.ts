@@ -1,11 +1,11 @@
-import $cleanup from "./cleanup.js";
-import $list from "./list.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * connections command group
  * @generated from apis/overlays/tunnels.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $cleanup from "./cleanup.js";
+import $list from "./list.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "connections",

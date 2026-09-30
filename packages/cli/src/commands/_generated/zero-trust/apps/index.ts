@@ -1,10 +1,10 @@
-import $review from "./review/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * apps command group
  * @generated from apis/overlays/zero-trust.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $review from "./review/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "apps",

@@ -1,3 +1,9 @@
+/**
+ * zero-trust command
+ * @generated from apis/overlays/zero-trust.ts
+ */
+import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
 import $access from "./access/index.js";
 import $apps from "./apps/index.js";
 import $casb from "./casb/index.js";
@@ -11,12 +17,6 @@ import $organization from "./organization/index.js";
 import $riskscoring from "./risk-scoring/index.js";
 import $seats from "./seats/index.js";
 import $users from "./users/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
-/**
- * zero-trust command
- * @generated from apis/overlays/zero-trust.ts
- */
-import type { CommandModule } from "yargs";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "zero-trust",

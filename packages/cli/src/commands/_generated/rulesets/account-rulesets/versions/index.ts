@@ -1,13 +1,13 @@
-import $bytag from "./by-tag/index.js";
-import $delete from "./delete.js";
-import $get from "./get.js";
-import $list from "./list.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * versions command group
  * @generated from apis/overlays/rulesets.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $delete from "./delete.js";
+import $get from "./get.js";
+import $list from "./list.js";
+import $bytag from "./by-tag/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "versions",

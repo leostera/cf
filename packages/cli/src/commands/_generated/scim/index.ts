@@ -1,14 +1,14 @@
-import $groups from "./groups/index.js";
-import $resourcetypes from "./resource-types/index.js";
-import $schemas from "./schemas/index.js";
-import $serviceproviderconfig from "./service-provider-config/index.js";
-import $users from "./users/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * scim command
  * @generated from apis/overlays/scim.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $groups from "./groups/index.js";
+import $resourcetypes from "./resource-types/index.js";
+import $schemas from "./schemas/index.js";
+import $serviceproviderconfig from "./service-provider-config/index.js";
+import $users from "./users/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "scim",

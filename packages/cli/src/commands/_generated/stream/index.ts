@@ -1,15 +1,15 @@
-import $keys from "./keys/index.js";
-import $liveinputs from "./live-inputs/index.js";
-import $storageusage from "./storage-usage.js";
-import $videos from "./videos/index.js";
-import $watermarks from "./watermarks/index.js";
-import $webhooks from "./webhooks/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * stream command
  * @generated from apis/overlays/stream.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $storageusage from "./storage-usage.js";
+import $keys from "./keys/index.js";
+import $liveinputs from "./live-inputs/index.js";
+import $videos from "./videos/index.js";
+import $watermarks from "./watermarks/index.js";
+import $webhooks from "./webhooks/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "stream",

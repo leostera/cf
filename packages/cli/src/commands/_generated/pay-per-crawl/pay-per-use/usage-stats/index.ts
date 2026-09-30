@@ -1,10 +1,10 @@
-import $getaccount from "./get-account.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * usage-stats command group
  * @generated from apis/overlays/pay-per-crawl.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $getaccount from "./get-account.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "usage-stats",

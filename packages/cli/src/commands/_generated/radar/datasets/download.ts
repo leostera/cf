@@ -1,18 +1,18 @@
-import type { CommonYargsOptions, InferArgs } from "#lib/cli-types.js";
-import type { ArgClassification } from "#lib/telemetry/index.js";
-import type { SdkQuery, SdkRequest } from "#sdk";
 /**
  * download command
  * @generated from apis/overlays/radar.ts
  */
 import type { Argv, CommandModule } from "yargs";
-import { createCommandClient } from "#lib/auth.js";
-import { compactBody, parseBody } from "#lib/body-parser.js";
+import type { CommonYargsOptions, InferArgs } from "#lib/cli-types.js";
+import type { SdkQuery, SdkRequest } from "#sdk";
+import type { ArgClassification } from "#lib/telemetry/index.js";
 import { withArgTypes } from "#lib/cli-types.js";
-import { formatDryRun } from "#lib/dry-run.js";
+import { createCommandClient } from "#lib/auth.js";
 import { formatOutput } from "#lib/output.js";
+import { formatDryRun } from "#lib/dry-run.js";
 import { withProgress } from "#lib/progress.js";
 import { runWithTelemetry } from "#lib/telemetry/index.js";
+import { compactBody, parseBody } from "#lib/body-parser.js";
 
 function builder(yargs: Argv<CommonYargsOptions>) {
 	return yargs

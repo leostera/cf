@@ -1,3 +1,9 @@
+/**
+ * radar command
+ * @generated from apis/overlays/radar.ts
+ */
+import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
 import $agentreadiness from "./agent-readiness/index.js";
 import $ai from "./ai/index.js";
 import $annotations from "./annotations/index.js";
@@ -23,12 +29,6 @@ import $search from "./search/index.js";
 import $tcpresetstimeouts from "./tcp-resets-timeouts/index.js";
 import $tlds from "./tlds/index.js";
 import $trafficanomalies from "./traffic-anomalies/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
-/**
- * radar command
- * @generated from apis/overlays/radar.ts
- */
-import type { CommandModule } from "yargs";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "radar",

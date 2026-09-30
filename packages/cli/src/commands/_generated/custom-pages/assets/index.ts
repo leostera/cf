@@ -1,14 +1,14 @@
-import $create from "./create/index.js";
-import $delete from "./delete/index.js";
-import $get from "./get/index.js";
-import $list from "./list/index.js";
-import $update from "./update/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * assets command group
  * @generated from apis/overlays/custom-pages.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $create from "./create/index.js";
+import $delete from "./delete/index.js";
+import $get from "./get/index.js";
+import $list from "./list/index.js";
+import $update from "./update/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "assets",

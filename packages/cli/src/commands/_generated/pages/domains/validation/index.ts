@@ -1,10 +1,10 @@
-import $retry from "./retry.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * validation command group
  * @generated from apis/overlays/pages.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $retry from "./retry.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "validation",

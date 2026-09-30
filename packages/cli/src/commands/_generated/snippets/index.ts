@@ -1,15 +1,15 @@
-import $content from "./content/index.js";
-import $delete from "./delete.js";
-import $get from "./get.js";
-import $list from "./list.js";
-import $rules from "./rules/index.js";
-import $update from "./update.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * snippets command
  * @generated from apis/overlays/snippets.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $delete from "./delete.js";
+import $get from "./get.js";
+import $list from "./list.js";
+import $update from "./update.js";
+import $content from "./content/index.js";
+import $rules from "./rules/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "snippets",

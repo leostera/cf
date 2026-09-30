@@ -1,11 +1,11 @@
-import $connectivityprecheck from "./connectivity-precheck/index.js";
-import $jobs from "./jobs/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * super-slurper command group
  * @generated from apis/overlays/r2.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $connectivityprecheck from "./connectivity-precheck/index.js";
+import $jobs from "./jobs/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "super-slurper",

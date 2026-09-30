@@ -1,11 +1,11 @@
-import $list from "./list.js";
-import $targetenvironments from "./target-environments/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * client-versions command group
  * @generated from apis/overlays/zero-trust.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $list from "./list.js";
+import $targetenvironments from "./target-environments/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "client-versions",

@@ -1,11 +1,11 @@
-import $listsubmitted from "./list-submitted.js";
-import $list from "./list.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * emails command group
  * @generated from apis/overlays/abuse-reports.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $list from "./list.js";
+import $listsubmitted from "./list-submitted.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "emails",

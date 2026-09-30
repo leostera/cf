@@ -1,12 +1,12 @@
-import $fix from "./fix.js";
-import $get from "./get.js";
-import $status from "./status.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * dns command group
  * @generated from apis/overlays/email-sending.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $fix from "./fix.js";
+import $get from "./get.js";
+import $status from "./status.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "dns",

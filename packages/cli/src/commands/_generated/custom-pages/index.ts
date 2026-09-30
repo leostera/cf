@@ -1,13 +1,13 @@
-import $accountcustompages from "./account-custom-pages/index.js";
-import $assets from "./assets/index.js";
-import $get from "./get.js";
-import $list from "./list.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * custom-pages command
  * @generated from apis/overlays/custom-pages.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $get from "./get.js";
+import $list from "./list.js";
+import $accountcustompages from "./account-custom-pages/index.js";
+import $assets from "./assets/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "custom-pages",

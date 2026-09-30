@@ -1,13 +1,13 @@
-import $cachereserveclear from "./cache-reserve-clear/index.js";
-import $get from "./get.js";
-import $healthchecks from "./health-checks/index.js";
-import $update from "./update.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * smart-shield command
  * @generated from apis/overlays/smart-shield.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $get from "./get.js";
+import $update from "./update.js";
+import $cachereserveclear from "./cache-reserve-clear/index.js";
+import $healthchecks from "./health-checks/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "smart-shield",

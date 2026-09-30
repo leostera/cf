@@ -1,10 +1,10 @@
-import $asset from "./asset.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * custom command group
  * @generated from apis/overlays/custom-pages.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $asset from "./asset.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "custom",

@@ -1,11 +1,11 @@
-import $summary from "./summary.js";
-import $timeseries from "./timeseries.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * findings command group
  * @generated from apis/overlays/analytics.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $summary from "./summary.js";
+import $timeseries from "./timeseries.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "findings",

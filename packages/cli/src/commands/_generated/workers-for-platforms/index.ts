@@ -1,10 +1,10 @@
-import $dispatchnamespaces from "./dispatch-namespaces/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * workers-for-platforms command
  * @generated from apis/overlays/workers-for-platforms.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $dispatchnamespaces from "./dispatch-namespaces/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "workers-for-platforms",

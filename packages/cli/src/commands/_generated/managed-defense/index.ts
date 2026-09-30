@@ -1,10 +1,10 @@
-import $vulnerabilitydiscovery from "./vulnerability-discovery/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * managed-defense command
  * @generated from apis/overlays/managed-defense.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $vulnerabilitydiscovery from "./vulnerability-discovery/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "managed-defense",

@@ -1,18 +1,18 @@
-import $actionlog from "./action-log/index.js";
-import $detections from "./detections/index.js";
-import $get from "./get.js";
-import $list from "./list.js";
-import $move from "./move.js";
-import $preview from "./preview/index.js";
-import $raw from "./raw/index.js";
-import $release from "./release.js";
-import $trace from "./trace/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * investigate command group
  * @generated from apis/overlays/email-security.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $get from "./get.js";
+import $list from "./list.js";
+import $move from "./move.js";
+import $release from "./release.js";
+import $actionlog from "./action-log/index.js";
+import $detections from "./detections/index.js";
+import $preview from "./preview/index.js";
+import $raw from "./raw/index.js";
+import $trace from "./trace/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "investigate",

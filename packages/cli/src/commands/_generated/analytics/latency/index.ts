@@ -1,11 +1,11 @@
-import $colos from "./colos/index.js";
-import $get from "./get.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * latency command group
  * @generated from apis/overlays/analytics.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $get from "./get.js";
+import $colos from "./colos/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "latency",

@@ -1,11 +1,11 @@
-import $get from "./get.js";
-import $network from "./network/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * recording command group
  * @generated from apis/overlays/browser-run.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $get from "./get.js";
+import $network from "./network/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "recording",

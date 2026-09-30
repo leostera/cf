@@ -1,15 +1,15 @@
+/**
+ * labels command group
+ * @generated from apis/overlays/web-assets.ts
+ */
+import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
 import $bulkcreate from "./bulk-create.js";
 import $bulkdelete from "./bulk-delete.js";
 import $bulkupdate from "./bulk-update.js";
 import $create from "./create.js";
 import $delete from "./delete.js";
 import $update from "./update.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
-/**
- * labels command group
- * @generated from apis/overlays/web-assets.ts
- */
-import type { CommandModule } from "yargs";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "labels",

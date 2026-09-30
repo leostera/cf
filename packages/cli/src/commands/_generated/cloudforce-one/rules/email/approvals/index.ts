@@ -1,10 +1,10 @@
-import $resubmit from "./resubmit.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * approvals command group
  * @generated from apis/overlays/cloudforce-one.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $resubmit from "./resubmit.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "approvals",

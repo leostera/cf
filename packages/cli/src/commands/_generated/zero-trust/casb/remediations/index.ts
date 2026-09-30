@@ -1,10 +1,10 @@
-import $jobs from "./jobs/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * remediations command group
  * @generated from apis/overlays/zero-trust.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $jobs from "./jobs/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "remediations",

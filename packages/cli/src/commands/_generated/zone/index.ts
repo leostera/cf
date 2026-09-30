@@ -1,10 +1,10 @@
-import $activate from "./activate.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * zone command
  * @generated from apis/overlays/zone.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $activate from "./activate.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "zone",

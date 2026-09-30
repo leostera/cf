@@ -1,15 +1,15 @@
-import $create from "./create.js";
-import $delete from "./delete.js";
-import $get from "./get.js";
-import $list from "./list.js";
-import $ramps from "./ramps/index.js";
-import $update from "./update.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * cf1-sites command group
  * @generated from apis/overlays/magic-transit.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $create from "./create.js";
+import $delete from "./delete.js";
+import $get from "./get.js";
+import $list from "./list.js";
+import $update from "./update.js";
+import $ramps from "./ramps/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "cf1-sites",

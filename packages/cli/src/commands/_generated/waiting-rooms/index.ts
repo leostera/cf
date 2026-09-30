@@ -1,20 +1,20 @@
-import $accountwaitingrooms from "./account-waiting-rooms/index.js";
-import $create from "./create.js";
-import $delete from "./delete.js";
-import $edit from "./edit.js";
-import $events from "./events/index.js";
-import $get from "./get.js";
-import $page from "./page/index.js";
-import $rules from "./rules/index.js";
-import $settings from "./settings/index.js";
-import $statuses from "./statuses/index.js";
-import $update from "./update.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * waiting-rooms command
  * @generated from apis/overlays/waiting-rooms.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $create from "./create.js";
+import $delete from "./delete.js";
+import $edit from "./edit.js";
+import $get from "./get.js";
+import $update from "./update.js";
+import $accountwaitingrooms from "./account-waiting-rooms/index.js";
+import $events from "./events/index.js";
+import $page from "./page/index.js";
+import $rules from "./rules/index.js";
+import $settings from "./settings/index.js";
+import $statuses from "./statuses/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "waiting-rooms",

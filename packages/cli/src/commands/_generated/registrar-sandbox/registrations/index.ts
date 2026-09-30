@@ -1,17 +1,17 @@
-import $check from "./check.js";
-import $create from "./create.js";
-import $getregistrationstatus from "./get-registration-status.js";
-import $getupdatestatus from "./get-update-status.js";
-import $get from "./get.js";
-import $list from "./list.js";
-import $search from "./search.js";
-import $update from "./update.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * registrations command group
  * @generated from apis/overlays/registrar-sandbox.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $check from "./check.js";
+import $create from "./create.js";
+import $get from "./get.js";
+import $getregistrationstatus from "./get-registration-status.js";
+import $getupdatestatus from "./get-update-status.js";
+import $list from "./list.js";
+import $search from "./search.js";
+import $update from "./update.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "registrations",

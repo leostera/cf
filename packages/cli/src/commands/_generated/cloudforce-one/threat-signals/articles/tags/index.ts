@@ -1,12 +1,12 @@
-import $add from "./add.js";
-import $generate from "./generate.js";
-import $remove from "./remove.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * tags command group
  * @generated from apis/overlays/cloudforce-one.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $add from "./add.js";
+import $generate from "./generate.js";
+import $remove from "./remove.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "tags",

@@ -1,12 +1,12 @@
-import $latency from "./latency/index.js";
-import $query from "./query/index.js";
-import $sql from "./sql/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * analytics command
  * @generated from apis/overlays/analytics.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $latency from "./latency/index.js";
+import $query from "./query/index.js";
+import $sql from "./sql/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "analytics",

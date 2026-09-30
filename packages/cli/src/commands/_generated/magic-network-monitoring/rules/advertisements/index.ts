@@ -1,10 +1,10 @@
-import $edit from "./edit.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * advertisements command group
  * @generated from apis/overlays/magic-network-monitoring.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $edit from "./edit.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "advertisements",

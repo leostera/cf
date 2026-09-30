@@ -1,10 +1,10 @@
-import $report from "./report/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * zones command group
  * @generated from apis/overlays/spectrum.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $report from "./report/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "zones",

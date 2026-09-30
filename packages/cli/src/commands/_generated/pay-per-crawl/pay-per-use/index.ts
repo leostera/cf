@@ -1,14 +1,14 @@
-import $operator from "./operator/index.js";
-import $pricing from "./pricing/index.js";
-import $proposals from "./proposals/index.js";
-import $usagestats from "./usage-stats/index.js";
-import $zones from "./zones/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * pay-per-use command group
  * @generated from apis/overlays/pay-per-crawl.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $operator from "./operator/index.js";
+import $pricing from "./pricing/index.js";
+import $proposals from "./proposals/index.js";
+import $usagestats from "./usage-stats/index.js";
+import $zones from "./zones/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "pay-per-use",

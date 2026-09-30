@@ -1,10 +1,10 @@
-import $bulk from "./bulk/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * update command group
  * @generated from apis/overlays/cloudforce-one.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $bulk from "./bulk/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "update",

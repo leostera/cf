@@ -1,15 +1,15 @@
-import $invalidateenvironment from "./invalidate-environment.js";
-import $invalidate from "./invalidate.js";
-import $origincloudregions from "./origin-cloud-regions/index.js";
-import $purgeenvironment from "./purge-environment.js";
-import $purge from "./purge.js";
-import $settings from "./settings/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * cache command
  * @generated from apis/overlays/cache.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $invalidate from "./invalidate.js";
+import $invalidateenvironment from "./invalidate-environment.js";
+import $purge from "./purge.js";
+import $purgeenvironment from "./purge-environment.js";
+import $origincloudregions from "./origin-cloud-regions/index.js";
+import $settings from "./settings/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "cache",

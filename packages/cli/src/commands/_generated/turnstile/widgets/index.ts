@@ -1,15 +1,15 @@
+/**
+ * widgets command group
+ * @generated from apis/overlays/turnstile.ts
+ */
+import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
 import $create from "./create.js";
 import $delete from "./delete.js";
 import $get from "./get.js";
 import $list from "./list.js";
 import $rotatesecret from "./rotate-secret.js";
 import $update from "./update.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
-/**
- * widgets command group
- * @generated from apis/overlays/turnstile.ts
- */
-import type { CommandModule } from "yargs";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "widgets",

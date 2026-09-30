@@ -1,11 +1,11 @@
-import $domaincategories from "./domain-categories.js";
-import $useragents from "./user-agents/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * top command group
  * @generated from apis/overlays/radar.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $domaincategories from "./domain-categories.js";
+import $useragents from "./user-agents/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "top",

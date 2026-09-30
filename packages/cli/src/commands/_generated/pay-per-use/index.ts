@@ -1,11 +1,11 @@
-import $enableddomains from "./enabled-domains/index.js";
-import $usagereports from "./usage-reports/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * pay-per-use command
  * @generated from apis/overlays/pay-per-use.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $enableddomains from "./enabled-domains/index.js";
+import $usagereports from "./usage-reports/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "pay-per-use",

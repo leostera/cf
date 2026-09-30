@@ -1,12 +1,12 @@
-import $list from "./list.js";
-import $tests from "./tests/index.js";
-import $trend from "./trend.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * pages command group
  * @generated from apis/overlays/speed.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $list from "./list.js";
+import $trend from "./trend.js";
+import $tests from "./tests/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "pages",

@@ -1,11 +1,11 @@
-import $summary from "./summary.js";
-import $timeseries from "./timeseries.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * markdown-for-agents command group
  * @generated from apis/overlays/radar.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $summary from "./summary.js";
+import $timeseries from "./timeseries.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "markdown-for-agents",

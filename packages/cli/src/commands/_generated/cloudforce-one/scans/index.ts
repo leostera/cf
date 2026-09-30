@@ -1,11 +1,11 @@
-import $config from "./config/index.js";
-import $results from "./results/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * scans command group
  * @generated from apis/overlays/cloudforce-one.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $config from "./config/index.js";
+import $results from "./results/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "scans",

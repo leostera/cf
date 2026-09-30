@@ -1,11 +1,11 @@
-import $aspa from "./aspa/index.js";
-import $roas from "./roas/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * rpki command group
  * @generated from apis/overlays/radar.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $aspa from "./aspa/index.js";
+import $roas from "./roas/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "rpki",

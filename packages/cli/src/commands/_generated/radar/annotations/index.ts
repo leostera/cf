@@ -1,12 +1,12 @@
-import $get from "./get.js";
-import $list from "./list.js";
-import $outages from "./outages/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * annotations command group
  * @generated from apis/overlays/radar.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $get from "./get.js";
+import $list from "./list.js";
+import $outages from "./outages/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "annotations",

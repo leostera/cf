@@ -1,15 +1,15 @@
-import $create from "./create.js";
-import $delete from "./delete.js";
-import $edit from "./edit.js";
-import $full from "./full/index.js";
-import $get from "./get.js";
-import $update from "./update.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * configs command group
  * @generated from apis/overlays/magic-network-monitoring.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $create from "./create.js";
+import $delete from "./delete.js";
+import $edit from "./edit.js";
+import $get from "./get.js";
+import $update from "./update.js";
+import $full from "./full/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "configs",

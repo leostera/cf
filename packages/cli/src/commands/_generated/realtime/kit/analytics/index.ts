@@ -1,11 +1,11 @@
-import $livestreams from "./livestreams/index.js";
-import $usage from "./usage/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * analytics command group
  * @generated from apis/overlays/realtime.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $livestreams from "./livestreams/index.js";
+import $usage from "./usage/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "analytics",

@@ -1,11 +1,11 @@
-import $origin from "./origin/index.js";
-import $tls from "./tls/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * post-quantum command group
  * @generated from apis/overlays/radar.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $origin from "./origin/index.js";
+import $tls from "./tls/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "post-quantum",

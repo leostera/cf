@@ -1,3 +1,9 @@
+/**
+ * dex command group
+ * @generated from apis/overlays/zero-trust.ts
+ */
+import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
 import $colos from "./colos/index.js";
 import $commands from "./commands/index.js";
 import $devices from "./devices/index.js";
@@ -7,12 +13,6 @@ import $rules from "./rules/index.js";
 import $testresults from "./test-results/index.js";
 import $tests from "./tests/index.js";
 import $warpchangeevents from "./warp-change-events/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
-/**
- * dex command group
- * @generated from apis/overlays/zero-trust.ts
- */
-import type { CommandModule } from "yargs";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "dex",

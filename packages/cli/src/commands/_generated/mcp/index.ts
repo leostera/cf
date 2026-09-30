@@ -1,11 +1,11 @@
-import $portals from "./portals/index.js";
-import $servers from "./servers/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * mcp command
  * @generated from apis/overlays/mcp.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $portals from "./portals/index.js";
+import $servers from "./servers/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "mcp",

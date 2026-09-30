@@ -1,11 +1,11 @@
-import $bytimes from "./bytimes/index.js";
-import $summaries from "./summaries/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * events command group
  * @generated from apis/overlays/spectrum.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $bytimes from "./bytimes/index.js";
+import $summaries from "./summaries/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "events",

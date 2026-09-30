@@ -1,12 +1,12 @@
-import $bulk from "./bulk/index.js";
-import $create from "./create.js";
-import $delete from "./delete.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * queries command
  * @generated from apis/overlays/queries.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $create from "./create.js";
+import $delete from "./delete.js";
+import $bulk from "./bulk/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "queries",

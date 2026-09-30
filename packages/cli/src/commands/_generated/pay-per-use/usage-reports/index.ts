@@ -1,10 +1,10 @@
-import $submit from "./submit.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * usage-reports command group
  * @generated from apis/overlays/pay-per-use.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $submit from "./submit.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "usage-reports",

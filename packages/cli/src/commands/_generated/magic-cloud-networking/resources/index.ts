@@ -1,13 +1,13 @@
-import $export from "./export.js";
-import $get from "./get.js";
-import $list from "./list.js";
-import $policypreview from "./policy-preview.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * resources command group
  * @generated from apis/overlays/magic-cloud-networking.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $export from "./export.js";
+import $get from "./get.js";
+import $list from "./list.js";
+import $policypreview from "./policy-preview.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "resources",

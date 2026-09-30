@@ -1,10 +1,10 @@
-import $events from "./events/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * load-balancing-analytics command group
  * @generated from apis/overlays/user.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $events from "./events/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "load-balancing-analytics",

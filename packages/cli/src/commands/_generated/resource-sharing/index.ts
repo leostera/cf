@@ -1,17 +1,17 @@
-import $create from "./create.js";
-import $delete from "./delete.js";
-import $excludedrecipients from "./excluded-recipients/index.js";
-import $get from "./get.js";
-import $list from "./list.js";
-import $recipients from "./recipients/index.js";
-import $resources from "./resources/index.js";
-import $update from "./update.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * resource-sharing command
  * @generated from apis/overlays/resource-sharing.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $create from "./create.js";
+import $delete from "./delete.js";
+import $get from "./get.js";
+import $list from "./list.js";
+import $update from "./update.js";
+import $excludedrecipients from "./excluded-recipients/index.js";
+import $recipients from "./recipients/index.js";
+import $resources from "./resources/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "resource-sharing",

@@ -1,17 +1,17 @@
-import $active from "./active/index.js";
-import $create from "./create.js";
-import $get from "./get.js";
-import $list from "./list.js";
-import $livestream from "./livestream/index.js";
-import $participants from "./participants/index.js";
-import $replace from "./replace.js";
-import $update from "./update.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * meetings command group
  * @generated from apis/overlays/realtime.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $create from "./create.js";
+import $get from "./get.js";
+import $list from "./list.js";
+import $replace from "./replace.js";
+import $update from "./update.js";
+import $active from "./active/index.js";
+import $livestream from "./livestream/index.js";
+import $participants from "./participants/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "meetings",

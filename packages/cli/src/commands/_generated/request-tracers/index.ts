@@ -1,10 +1,10 @@
-import $traces from "./traces/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * request-tracers command
  * @generated from apis/overlays/request-tracers.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $traces from "./traces/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "request-tracers",

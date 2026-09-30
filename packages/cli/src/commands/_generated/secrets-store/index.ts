@@ -1,12 +1,12 @@
-import $quota from "./quota/index.js";
-import $secrets from "./secrets/index.js";
-import $stores from "./stores/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * secrets-store command
  * @generated from apis/overlays/secrets-store.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $quota from "./quota/index.js";
+import $secrets from "./secrets/index.js";
+import $stores from "./stores/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "secrets-store",

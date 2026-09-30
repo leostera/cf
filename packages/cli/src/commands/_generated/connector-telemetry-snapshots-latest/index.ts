@@ -1,9 +1,9 @@
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * connector-telemetry-snapshots-latest command
  * @generated from apis/overlays/connector-telemetry-snapshots-latest.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "connector-telemetry-snapshots-latest",

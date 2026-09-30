@@ -1,11 +1,11 @@
-import $billing from "./billing/index.js";
-import $logs from "./logs/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * organizations command
  * @generated from apis/overlays/organizations.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $billing from "./billing/index.js";
+import $logs from "./logs/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "organizations",

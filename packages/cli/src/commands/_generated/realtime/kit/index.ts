@@ -1,3 +1,9 @@
+/**
+ * kit command group
+ * @generated from apis/overlays/realtime.ts
+ */
+import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
 import $analytics from "./analytics/index.js";
 import $apps from "./apps/index.js";
 import $livestreams from "./livestreams/index.js";
@@ -6,12 +12,6 @@ import $presets from "./presets/index.js";
 import $recordings from "./recordings/index.js";
 import $sessions from "./sessions/index.js";
 import $webhooks from "./webhooks/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
-/**
- * kit command group
- * @generated from apis/overlays/realtime.ts
- */
-import type { CommandModule } from "yargs";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "kit",

@@ -1,11 +1,11 @@
-import $bulkdismiss from "./bulk-dismiss.js";
-import $get from "./get.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * matches command group
  * @generated from apis/overlays/brand-protection.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $bulkdismiss from "./bulk-dismiss.js";
+import $get from "./get.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "matches",

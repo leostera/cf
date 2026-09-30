@@ -1,11 +1,11 @@
-import $regional_services from "./regional_services/index.js";
-import $regions from "./regions/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * dls command
  * @generated from apis/overlays/dls.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $regional_services from "./regional_services/index.js";
+import $regions from "./regions/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "dls",

@@ -1,11 +1,11 @@
-import $group from "./group.js";
-import $v2 from "./v2.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * get command group
  * @generated from apis/overlays/cloudforce-one.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $group from "./group.js";
+import $v2 from "./v2.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "get",

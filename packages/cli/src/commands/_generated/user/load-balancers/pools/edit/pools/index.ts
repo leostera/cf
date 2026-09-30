@@ -1,11 +1,11 @@
-import $pool from "./pool.js";
-import $pools from "./pools.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * pools command group
  * @generated from apis/overlays/user.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $pool from "./pool.js";
+import $pools from "./pools.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "pools",

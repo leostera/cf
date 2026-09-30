@@ -1,12 +1,12 @@
-import $asns from "./asns/index.js";
-import $get from "./get.js";
-import $locations from "./locations/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * entities command group
  * @generated from apis/overlays/radar.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $get from "./get.js";
+import $asns from "./asns/index.js";
+import $locations from "./locations/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "entities",

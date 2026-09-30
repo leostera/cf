@@ -1,12 +1,12 @@
-import $availabilities from "./availabilities/index.js";
-import $pages from "./pages/index.js";
-import $schedule from "./schedule/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * speed command
  * @generated from apis/overlays/speed.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $availabilities from "./availabilities/index.js";
+import $pages from "./pages/index.js";
+import $schedule from "./schedule/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "speed",

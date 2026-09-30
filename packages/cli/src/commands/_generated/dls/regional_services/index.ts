@@ -1,10 +1,10 @@
-import $prefix_bindings from "./prefix_bindings/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * regional_services command group
  * @generated from apis/overlays/dls.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $prefix_bindings from "./prefix_bindings/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "regional_services",

@@ -1,5 +1,9 @@
-import $assetnew from "./asset-new/index.js";
-import $assets from "./assets/index.js";
+/**
+ * requests command group
+ * @generated from apis/overlays/cloudforce-one.ts
+ */
+import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
 import $cloudforceOneRequestGet from "./cloudforceOneRequestGet.js";
 import $cloudforceOneRequestList from "./cloudforceOneRequestList.js";
 import $cloudforceOneRequestNew from "./cloudforceOneRequestNew.js";
@@ -8,22 +12,18 @@ import $constants from "./constants.js";
 import $delete from "./delete.js";
 import $getRequestList from "./getRequestList.js";
 import $getRequestRead from "./getRequestRead.js";
+import $postRequestCreate from "./postRequestCreate.js";
+import $putRequestUpdate from "./putRequestUpdate.js";
+import $quota from "./quota.js";
+import $types from "./types.js";
+import $assetnew from "./asset-new/index.js";
+import $assets from "./assets/index.js";
 import $legalresponse from "./legal-response/index.js";
 import $message from "./message/index.js";
 import $messages from "./messages/index.js";
 import $metadata from "./metadata/index.js";
-import $postRequestCreate from "./postRequestCreate.js";
 import $priority from "./priority/index.js";
-import $putRequestUpdate from "./putRequestUpdate.js";
-import $quota from "./quota.js";
-import $types from "./types.js";
 import $user from "./user/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
-/**
- * requests command group
- * @generated from apis/overlays/cloudforce-one.ts
- */
-import type { CommandModule } from "yargs";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "requests",

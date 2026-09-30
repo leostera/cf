@@ -1,13 +1,13 @@
-import $delete from "./delete.js";
-import $edit from "./edit.js";
-import $get from "./get.js";
-import $update from "./update.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * origin-tls-compliance-modes command group
  * @generated from apis/overlays/zones.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $delete from "./delete.js";
+import $edit from "./edit.js";
+import $get from "./get.js";
+import $update from "./update.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "origin-tls-compliance-modes",

@@ -1,15 +1,21 @@
-import $aegis from "./aegis/index.js";
-import $automaticplatformoptimization from "./automatic-platform-optimization/index.js";
-import $binaryast from "./binary-ast/index.js";
+/**
+ * zones command
+ * @generated from apis/overlays/zones.ts
+ */
+import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
 import $create from "./create.js";
 import $delete from "./delete.js";
 import $edit from "./edit.js";
-import $fonts from "./fonts/index.js";
 import $get from "./get.js";
+import $list from "./list.js";
+import $aegis from "./aegis/index.js";
+import $automaticplatformoptimization from "./automatic-platform-optimization/index.js";
+import $binaryast from "./binary-ast/index.js";
+import $fonts from "./fonts/index.js";
 import $h2prioritization from "./h2-prioritization/index.js";
 import $holds from "./holds/index.js";
 import $imageresizing from "./image-resizing/index.js";
-import $list from "./list.js";
 import $originh2maxstreams from "./origin-h2-max-streams/index.js";
 import $originmaxhttpversion from "./origin-max-http-version/index.js";
 import $origintlscompliancemodes from "./origin-tls-compliance-modes/index.js";
@@ -22,12 +28,6 @@ import $subscriptions from "./subscriptions/index.js";
 import $transformationsallowedorigins from "./transformations-allowed-origins/index.js";
 import $transformationsc2pa from "./transformations-c2pa/index.js";
 import $transformationsconfig from "./transformations-config/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
-/**
- * zones command
- * @generated from apis/overlays/zones.ts
- */
-import type { CommandModule } from "yargs";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "zones",

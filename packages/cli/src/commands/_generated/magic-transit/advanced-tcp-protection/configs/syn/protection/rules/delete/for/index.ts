@@ -1,10 +1,10 @@
-import $account from "./account.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * for command group
  * @generated from apis/overlays/magic-transit.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $account from "./account.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "for",

@@ -1,17 +1,17 @@
-import $appeals from "./appeals/index.js";
-import $create from "./create.js";
-import $emails from "./emails/index.js";
-import $getsubmitted from "./get-submitted.js";
-import $get from "./get.js";
-import $listsubmitted from "./list-submitted.js";
-import $list from "./list.js";
-import $mitigations from "./mitigations/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * abuse-reports command
  * @generated from apis/overlays/abuse-reports.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $create from "./create.js";
+import $get from "./get.js";
+import $getsubmitted from "./get-submitted.js";
+import $list from "./list.js";
+import $listsubmitted from "./list-submitted.js";
+import $appeals from "./appeals/index.js";
+import $emails from "./emails/index.js";
+import $mitigations from "./mitigations/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "abuse-reports",

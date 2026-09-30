@@ -1,15 +1,15 @@
+/**
+ * logpush command
+ * @generated from apis/overlays/logpush.ts
+ */
+import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
 import $accountdatasets from "./account-datasets/index.js";
 import $accountjobs from "./account-jobs/index.js";
 import $accountownership from "./account-ownership/index.js";
 import $accountvalidate from "./account-validate/index.js";
 import $edge from "./edge/index.js";
 import $transformers from "./transformers/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
-/**
- * logpush command
- * @generated from apis/overlays/logpush.ts
- */
-import type { CommandModule } from "yargs";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "logpush",

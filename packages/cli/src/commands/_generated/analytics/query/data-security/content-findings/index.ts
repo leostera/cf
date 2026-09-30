@@ -1,10 +1,10 @@
-import $topn from "./top-n.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * content-findings command group
  * @generated from apis/overlays/analytics.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $topn from "./top-n.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "content-findings",

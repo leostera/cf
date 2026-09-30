@@ -1,11 +1,11 @@
-import $download from "./download/index.js";
-import $get from "./get.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * logo-matches command
  * @generated from apis/overlays/logo-matches.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $get from "./get.js";
+import $download from "./download/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "logo-matches",

@@ -1,11 +1,11 @@
-import $allowlist from "./allowlist/index.js";
-import $for from "./for/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * delete command group
  * @generated from apis/overlays/magic-transit.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $allowlist from "./allowlist/index.js";
+import $for from "./for/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "delete",

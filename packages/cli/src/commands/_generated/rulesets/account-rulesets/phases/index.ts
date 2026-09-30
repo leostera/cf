@@ -1,12 +1,12 @@
-import $get from "./get.js";
-import $update from "./update.js";
-import $versions from "./versions/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * phases command group
  * @generated from apis/overlays/rulesets.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $get from "./get.js";
+import $update from "./update.js";
+import $versions from "./versions/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "phases",

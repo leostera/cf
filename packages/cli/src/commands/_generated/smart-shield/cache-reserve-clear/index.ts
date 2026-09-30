@@ -1,11 +1,11 @@
-import $clear from "./clear.js";
-import $status from "./status.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * cache-reserve-clear command group
  * @generated from apis/overlays/smart-shield.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $clear from "./clear.js";
+import $status from "./status.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "cache-reserve-clear",

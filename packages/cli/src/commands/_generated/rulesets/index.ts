@@ -1,10 +1,10 @@
-import $accountrulesets from "./account-rulesets/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * rulesets command
  * @generated from apis/overlays/rulesets.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $accountrulesets from "./account-rulesets/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "rulesets",

@@ -1,12 +1,12 @@
-import $get from "./get.js";
-import $list from "./list.js";
-import $respond from "./respond.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * invites command group
  * @generated from apis/overlays/user.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $get from "./get.js";
+import $list from "./list.js";
+import $respond from "./respond.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "invites",

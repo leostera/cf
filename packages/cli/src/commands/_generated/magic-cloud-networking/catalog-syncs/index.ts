@@ -1,17 +1,17 @@
-import $create from "./create.js";
-import $delete from "./delete.js";
-import $edit from "./edit.js";
-import $get from "./get.js";
-import $list from "./list.js";
-import $prebuiltpolicies from "./prebuilt-policies/index.js";
-import $refresh from "./refresh.js";
-import $update from "./update.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * catalog-syncs command group
  * @generated from apis/overlays/magic-cloud-networking.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $create from "./create.js";
+import $delete from "./delete.js";
+import $edit from "./edit.js";
+import $get from "./get.js";
+import $list from "./list.js";
+import $refresh from "./refresh.js";
+import $update from "./update.js";
+import $prebuiltpolicies from "./prebuilt-policies/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "catalog-syncs",

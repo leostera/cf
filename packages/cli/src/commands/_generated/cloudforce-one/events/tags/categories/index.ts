@@ -1,15 +1,15 @@
-import $actors from "./actors/index.js";
-import $create from "./create/index.js";
-import $delete from "./delete.js";
-import $getbyid from "./get-by-id.js";
-import $get from "./get.js";
-import $patch from "./patch.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * categories command group
  * @generated from apis/overlays/cloudforce-one.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $delete from "./delete.js";
+import $get from "./get.js";
+import $getbyid from "./get-by-id.js";
+import $patch from "./patch.js";
+import $actors from "./actors/index.js";
+import $create from "./create/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "categories",

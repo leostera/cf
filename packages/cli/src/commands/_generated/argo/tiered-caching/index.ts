@@ -1,11 +1,11 @@
-import $edit from "./edit.js";
-import $get from "./get.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * tiered-caching command group
  * @generated from apis/overlays/argo.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $edit from "./edit.js";
+import $get from "./get.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "tiered-caching",

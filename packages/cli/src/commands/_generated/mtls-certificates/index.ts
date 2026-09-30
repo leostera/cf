@@ -1,14 +1,14 @@
-import $associations from "./associations/index.js";
-import $create from "./create.js";
-import $delete from "./delete.js";
-import $get from "./get.js";
-import $list from "./list.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * mtls-certificates command
  * @generated from apis/overlays/mtls-certificates.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $create from "./create.js";
+import $delete from "./delete.js";
+import $get from "./get.js";
+import $list from "./list.js";
+import $associations from "./associations/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "mtls-certificates",

@@ -1,22 +1,22 @@
-import $blobs from "./blobs/index.js";
-import $commits from "./commits/index.js";
-import $create from "./create.js";
-import $delete from "./delete.js";
-import $files from "./files/index.js";
-import $fork from "./fork.js";
-import $get from "./get.js";
-import $import from "./import.js";
-import $list from "./list.js";
-import $logs from "./logs/index.js";
-import $raw from "./raw/index.js";
-import $tokens from "./tokens/index.js";
-import $trees from "./trees/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * repos command group
  * @generated from apis/overlays/artifacts.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $create from "./create.js";
+import $delete from "./delete.js";
+import $fork from "./fork.js";
+import $get from "./get.js";
+import $import from "./import.js";
+import $list from "./list.js";
+import $blobs from "./blobs/index.js";
+import $commits from "./commits/index.js";
+import $files from "./files/index.js";
+import $logs from "./logs/index.js";
+import $raw from "./raw/index.js";
+import $tokens from "./tokens/index.js";
+import $trees from "./trees/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "repos",

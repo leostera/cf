@@ -1,13 +1,13 @@
-import $domain from "./domain/index.js";
-import $internetservices from "./internet-services/index.js";
-import $timeseriesgroups from "./timeseries-groups.js";
-import $top from "./top.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * ranking command group
  * @generated from apis/overlays/radar.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $timeseriesgroups from "./timeseries-groups.js";
+import $top from "./top.js";
+import $domain from "./domain/index.js";
+import $internetservices from "./internet-services/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "ranking",

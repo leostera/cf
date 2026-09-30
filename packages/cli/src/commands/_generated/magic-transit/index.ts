@@ -1,3 +1,9 @@
+/**
+ * magic-transit command
+ * @generated from apis/overlays/magic-transit.ts
+ */
+import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
 import $advanceddnsprotection from "./advanced-dns-protection/index.js";
 import $advancedtcpprotection from "./advanced-tcp-protection/index.js";
 import $apps from "./apps/index.js";
@@ -11,12 +17,6 @@ import $pcaps from "./pcaps/index.js";
 import $redundancygroups from "./redundancy-groups/index.js";
 import $routes from "./routes/index.js";
 import $sites from "./sites/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
-/**
- * magic-transit command
- * @generated from apis/overlays/magic-transit.ts
- */
-import type { CommandModule } from "yargs";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "magic-transit",

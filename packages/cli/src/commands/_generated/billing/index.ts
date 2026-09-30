@@ -1,13 +1,13 @@
-import $addresses from "./addresses/index.js";
-import $profiles from "./profiles/index.js";
-import $rateplans from "./rate-plans/index.js";
-import $usage from "./usage/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * billing command
  * @generated from apis/overlays/billing.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $addresses from "./addresses/index.js";
+import $profiles from "./profiles/index.js";
+import $rateplans from "./rate-plans/index.js";
+import $usage from "./usage/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "billing",

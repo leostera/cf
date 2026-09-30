@@ -1,6 +1,12 @@
+/**
+ * events command group
+ * @generated from apis/overlays/cloudforce-one.ts
+ */
+import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $create from "./create.js";
 import $aggregate from "./aggregate/index.js";
 import $categories from "./categories/index.js";
-import $create from "./create.js";
 import $dataset from "./dataset/index.js";
 import $datasets from "./datasets/index.js";
 import $delete from "./delete/index.js";
@@ -14,12 +20,6 @@ import $relationships from "./relationships/index.js";
 import $tags from "./tags/index.js";
 import $target from "./target/index.js";
 import $update from "./update/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
-/**
- * events command group
- * @generated from apis/overlays/cloudforce-one.ts
- */
-import type { CommandModule } from "yargs";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "events",

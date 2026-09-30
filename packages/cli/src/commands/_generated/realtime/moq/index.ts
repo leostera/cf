@@ -1,10 +1,10 @@
-import $relays from "./relays/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * moq command group
  * @generated from apis/overlays/realtime.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $relays from "./relays/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "moq",

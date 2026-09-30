@@ -1,10 +1,10 @@
-import $purge from "./purge.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * cache command group
  * @generated from apis/overlays/builds.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $purge from "./purge.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "cache",

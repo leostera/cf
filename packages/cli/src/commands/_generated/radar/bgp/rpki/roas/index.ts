@@ -1,10 +1,10 @@
-import $timeseries from "./timeseries.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * roas command group
  * @generated from apis/overlays/radar.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $timeseries from "./timeseries.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "roas",

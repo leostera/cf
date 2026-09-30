@@ -1,12 +1,12 @@
-import $categories from "./categories.js";
-import $timeseriesgroups from "./timeseries-groups.js";
-import $top from "./top.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * internet-services command group
  * @generated from apis/overlays/radar.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $categories from "./categories.js";
+import $timeseriesgroups from "./timeseries-groups.js";
+import $top from "./top.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "internet-services",

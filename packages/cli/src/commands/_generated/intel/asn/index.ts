@@ -1,11 +1,11 @@
-import $get from "./get.js";
-import $subnets from "./subnets/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * asn command group
  * @generated from apis/overlays/intel.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $get from "./get.js";
+import $subnets from "./subnets/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "asn",

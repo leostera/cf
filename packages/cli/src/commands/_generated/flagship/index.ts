@@ -1,10 +1,10 @@
-import $apps from "./apps/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * flagship command
  * @generated from apis/overlays/flagship.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $apps from "./apps/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "flagship",

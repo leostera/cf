@@ -1,10 +1,10 @@
-import $dns from "./dns/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * configs command group
  * @generated from apis/overlays/magic-transit.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $dns from "./dns/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "configs",

@@ -1,15 +1,15 @@
+/**
+ * certificate-packs command group
+ * @generated from apis/overlays/ssl.ts
+ */
+import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
 import $create from "./create.js";
 import $delete from "./delete.js";
 import $edit from "./edit.js";
 import $get from "./get.js";
 import $list from "./list.js";
 import $quota from "./quota/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
-/**
- * certificate-packs command group
- * @generated from apis/overlays/ssl.ts
- */
-import type { CommandModule } from "yargs";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "certificate-packs",

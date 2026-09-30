@@ -1,10 +1,10 @@
-import $catalog from "./catalog/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * industries command group
  * @generated from apis/overlays/cloudforce-one.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $catalog from "./catalog/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "industries",

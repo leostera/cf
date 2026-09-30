@@ -1,14 +1,14 @@
-import $delete from "./delete.js";
-import $generate from "./generate.js";
-import $get from "./get.js";
-import $upload from "./upload.js";
-import $vtt from "./vtt/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * language command group
  * @generated from apis/overlays/stream.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $delete from "./delete.js";
+import $generate from "./generate.js";
+import $get from "./get.js";
+import $upload from "./upload.js";
+import $vtt from "./vtt/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "language",

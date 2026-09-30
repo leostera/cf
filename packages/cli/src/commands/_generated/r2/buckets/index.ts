@@ -1,24 +1,24 @@
-import $cors from "./cors/index.js";
-import $createbyname from "./create-by-name.js";
-import $create from "./create.js";
-import $delete from "./delete.js";
-import $domains from "./domains/index.js";
-import $edit from "./edit.js";
-import $eventnotifications from "./event-notifications/index.js";
-import $get from "./get.js";
-import $jobs from "./jobs/index.js";
-import $lifecycle from "./lifecycle/index.js";
-import $list from "./list.js";
-import $localuploads from "./local-uploads/index.js";
-import $locks from "./locks/index.js";
-import $metrics from "./metrics/index.js";
-import $sippy from "./sippy/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * buckets command group
  * @generated from apis/overlays/r2.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $create from "./create.js";
+import $createbyname from "./create-by-name.js";
+import $delete from "./delete.js";
+import $edit from "./edit.js";
+import $get from "./get.js";
+import $list from "./list.js";
+import $cors from "./cors/index.js";
+import $domains from "./domains/index.js";
+import $eventnotifications from "./event-notifications/index.js";
+import $jobs from "./jobs/index.js";
+import $lifecycle from "./lifecycle/index.js";
+import $localuploads from "./local-uploads/index.js";
+import $locks from "./locks/index.js";
+import $metrics from "./metrics/index.js";
+import $sippy from "./sippy/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "buckets",

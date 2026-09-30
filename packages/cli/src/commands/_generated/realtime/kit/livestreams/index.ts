@@ -1,14 +1,14 @@
-import $get from "./get.js";
-import $list from "./list.js";
-import $sessions from "./sessions/index.js";
-import $start from "./start.js";
-import $stop from "./stop.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * livestreams command group
  * @generated from apis/overlays/realtime.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $get from "./get.js";
+import $list from "./list.js";
+import $start from "./start.js";
+import $stop from "./stop.js";
+import $sessions from "./sessions/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "livestreams",

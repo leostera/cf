@@ -1,11 +1,11 @@
-import $flow from "./flow/index.js";
-import $protection from "./protection/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * tcp command group
  * @generated from apis/overlays/magic-transit.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $flow from "./flow/index.js";
+import $protection from "./protection/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "tcp",

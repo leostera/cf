@@ -1,11 +1,11 @@
-import $layer3 from "./layer3/index.js";
-import $layer7 from "./layer7/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * attacks command group
  * @generated from apis/overlays/radar.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $layer3 from "./layer3/index.js";
+import $layer7 from "./layer7/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "attacks",

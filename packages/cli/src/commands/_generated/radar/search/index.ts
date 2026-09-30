@@ -1,10 +1,10 @@
-import $global from "./global.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * search command group
  * @generated from apis/overlays/radar.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $global from "./global.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "search",

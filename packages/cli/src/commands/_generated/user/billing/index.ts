@@ -1,11 +1,11 @@
-import $history from "./history/index.js";
-import $profile from "./profile/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * billing command group
  * @generated from apis/overlays/user.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $history from "./history/index.js";
+import $profile from "./profile/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "billing",

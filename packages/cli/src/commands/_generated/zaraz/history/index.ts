@@ -1,12 +1,12 @@
-import $configs from "./configs/index.js";
-import $list from "./list.js";
-import $update from "./update.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * history command group
  * @generated from apis/overlays/zaraz.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $list from "./list.js";
+import $update from "./update.js";
+import $configs from "./configs/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "history",

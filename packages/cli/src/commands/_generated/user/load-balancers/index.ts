@@ -1,13 +1,13 @@
-import $monitors from "./monitors/index.js";
-import $pools from "./pools/index.js";
-import $preview from "./preview/index.js";
-import $regions from "./regions/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * load-balancers command group
  * @generated from apis/overlays/user.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $monitors from "./monitors/index.js";
+import $pools from "./pools/index.js";
+import $preview from "./preview/index.js";
+import $regions from "./regions/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "load-balancers",

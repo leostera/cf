@@ -1,13 +1,13 @@
-import $allowlist from "./allowlist/index.js";
-import $prefixes from "./prefixes/index.js";
-import $syn from "./syn/index.js";
-import $tcp from "./tcp/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * configs command group
  * @generated from apis/overlays/magic-transit.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $allowlist from "./allowlist/index.js";
+import $prefixes from "./prefixes/index.js";
+import $syn from "./syn/index.js";
+import $tcp from "./tcp/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "configs",

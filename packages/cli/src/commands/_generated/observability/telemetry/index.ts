@@ -1,12 +1,12 @@
-import $keys from "./keys.js";
-import $query from "./query.js";
-import $values from "./values.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * telemetry command group
  * @generated from apis/overlays/observability.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $keys from "./keys.js";
+import $query from "./query.js";
+import $values from "./values.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "telemetry",

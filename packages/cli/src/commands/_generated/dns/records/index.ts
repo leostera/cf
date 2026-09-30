@@ -1,3 +1,9 @@
+/**
+ * records command group
+ * @generated from apis/overlays/dns.ts
+ */
+import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
 import $batch from "./batch.js";
 import $create from "./create.js";
 import $delete from "./delete.js";
@@ -6,17 +12,11 @@ import $export from "./export.js";
 import $get from "./get.js";
 import $import from "./import.js";
 import $list from "./list.js";
+import $scan from "./scan.js";
 import $scanlist from "./scan-list.js";
 import $scanreview from "./scan-review.js";
 import $scantrigger from "./scan-trigger.js";
-import $scan from "./scan.js";
 import $update from "./update.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
-/**
- * records command group
- * @generated from apis/overlays/dns.ts
- */
-import type { CommandModule } from "yargs";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "records",

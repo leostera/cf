@@ -1,3 +1,9 @@
+/**
+ * pipelines command
+ * @generated from apis/overlays/pipelines.ts
+ */
+import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
 import $create from "./create.js";
 import $delete from "./delete.js";
 import $get from "./get.js";
@@ -7,15 +13,9 @@ import $legacyget from "./legacy-get.js";
 import $legacylist from "./legacy-list.js";
 import $legacyupdate from "./legacy-update.js";
 import $list from "./list.js";
+import $validatesql from "./validate-sql.js";
 import $sinks from "./sinks/index.js";
 import $streams from "./streams/index.js";
-import $validatesql from "./validate-sql.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
-/**
- * pipelines command
- * @generated from apis/overlays/pipelines.ts
- */
-import type { CommandModule } from "yargs";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "pipelines",

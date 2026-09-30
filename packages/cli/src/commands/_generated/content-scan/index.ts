@@ -1,12 +1,12 @@
-import $expressions from "./expressions/index.js";
-import $get from "./get.js";
-import $update from "./update.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * content-scan command
  * @generated from apis/overlays/content-scan.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $get from "./get.js";
+import $update from "./update.js";
+import $expressions from "./expressions/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "content-scan",

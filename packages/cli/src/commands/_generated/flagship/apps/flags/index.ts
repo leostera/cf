@@ -1,16 +1,16 @@
-import $changelog from "./changelog/index.js";
+/**
+ * flags command group
+ * @generated from apis/overlays/flagship.ts
+ */
+import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
 import $create from "./create.js";
 import $delete from "./delete.js";
 import $evaluate from "./evaluate.js";
 import $get from "./get.js";
 import $list from "./list.js";
 import $update from "./update.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
-/**
- * flags command group
- * @generated from apis/overlays/flagship.ts
- */
-import type { CommandModule } from "yargs";
+import $changelog from "./changelog/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "flags",

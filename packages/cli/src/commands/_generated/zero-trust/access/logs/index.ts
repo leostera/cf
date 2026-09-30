@@ -1,12 +1,12 @@
-import $accessrequests from "./access-requests/index.js";
-import $jitrequests from "./jit-requests/index.js";
-import $scim from "./scim/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * logs command group
  * @generated from apis/overlays/zero-trust.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $accessrequests from "./access-requests/index.js";
+import $jitrequests from "./jit-requests/index.js";
+import $scim from "./scim/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "logs",

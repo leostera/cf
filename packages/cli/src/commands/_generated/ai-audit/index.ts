@@ -1,10 +1,10 @@
-import $robots from "./robots/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * ai-audit command
  * @generated from apis/overlays/ai-audit.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $robots from "./robots/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "ai-audit",

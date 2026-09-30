@@ -1,10 +1,10 @@
-import $configs from "./configs/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * advanced-tcp-protection command group
  * @generated from apis/overlays/magic-transit.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $configs from "./configs/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "advanced-tcp-protection",

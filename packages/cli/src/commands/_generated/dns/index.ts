@@ -1,14 +1,14 @@
-import $dnssec from "./dnssec/index.js";
-import $records from "./records/index.js";
-import $settings from "./settings/index.js";
-import $usage from "./usage/index.js";
-import $zonetransfers from "./zone-transfers/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * dns command
  * @generated from apis/overlays/dns.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $dnssec from "./dnssec/index.js";
+import $records from "./records/index.js";
+import $settings from "./settings/index.js";
+import $usage from "./usage/index.js";
+import $zonetransfers from "./zone-transfers/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "dns",

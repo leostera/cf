@@ -1,20 +1,20 @@
-import $acls from "./acls/index.js";
-import $appconfiguration from "./app-configuration/index.js";
-import $create from "./create.js";
-import $delete from "./delete.js";
-import $edit from "./edit.js";
-import $get from "./get.js";
-import $lans from "./lans/index.js";
-import $list from "./list.js";
-import $netflowconfig from "./netflow-config/index.js";
-import $update from "./update.js";
-import $wans from "./wans/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * sites command group
  * @generated from apis/overlays/magic-transit.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $create from "./create.js";
+import $delete from "./delete.js";
+import $edit from "./edit.js";
+import $get from "./get.js";
+import $list from "./list.js";
+import $update from "./update.js";
+import $acls from "./acls/index.js";
+import $appconfiguration from "./app-configuration/index.js";
+import $lans from "./lans/index.js";
+import $netflowconfig from "./netflow-config/index.js";
+import $wans from "./wans/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "sites",

@@ -1,10 +1,10 @@
-import $tokens from "./tokens/index.js";
-import type { CommonYargsOptions } from "#lib/cli-types.js";
 /**
  * vpc-flows command group
  * @generated from apis/overlays/magic-network-monitoring.ts
  */
 import type { CommandModule } from "yargs";
+import type { CommonYargsOptions } from "#lib/cli-types.js";
+import $tokens from "./tokens/index.js";
 
 const command: CommandModule<CommonYargsOptions> = {
 	command: "vpc-flows",
