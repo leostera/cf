@@ -1134,9 +1134,10 @@
 				}
 			],
 			"handWritten": {
-				"kind": "root",
+				"kind": "leaf",
 				"overrides": false,
-				"dir": "previews"
+				"dir": "previews/deploy",
+				"parent": "previews"
 			}
 		},
 		{

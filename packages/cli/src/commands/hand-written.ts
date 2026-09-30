@@ -135,12 +135,10 @@ export const handWrittenCommands: readonly HandWrittenCommand[] = [
 		telemetry: { command: "cli", recordArgs: false },
 	},
 	{
-		kind: "root",
-		command: "previews",
-		describe: "Manage Worker Previews",
-		dir: "previews",
-		load: () => import("./previews/index.js"),
-		telemetry: { command: "previews", recordArgs: false },
+		kind: "leaf",
+		parent: "previews",
+		name: "deploy",
+		dir: "previews/deploy",
 	},
 	{
 		kind: "root",

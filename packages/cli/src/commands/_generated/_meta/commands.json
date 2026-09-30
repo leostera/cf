@@ -86589,6 +86589,50 @@
 			"hideCommand": true
 		},
 		{
+			"command": "cf previews delete",
+			"name": "delete",
+			"fullPath": ["previews", "delete"],
+			"description": "Delete a Preview.",
+			"summary": "Delete Preview",
+			"usage": "cf previews delete <name> [options]",
+			"arguments": [
+				{
+					"name": "name",
+					"position": 0,
+					"type": "string",
+					"required": true,
+					"description": "Identifier for the Preview, which can be ID, slug, or URL-encoded name."
+				}
+			],
+			"options": [
+				{
+					"name": "worker",
+					"type": "string",
+					"required": true,
+					"description": "Identifier for the Worker, which can be ID or name."
+				},
+				{
+					"name": "force-delete",
+					"type": "boolean",
+					"required": false,
+					"description": "If true, delete the Preview even when other Workers still reference it. Service bindings in those Workers may be left broken. Durable Object namespaces implemented by the deleted Preview are deleted even if other Workers reference them."
+				},
+				{
+					"name": "dry-run",
+					"type": "boolean",
+					"required": false,
+					"description": "Validate and show what would happen without executing",
+					"default": false
+				}
+			],
+			"category": "delete",
+			"hasRequestBody": false,
+			"httpMethod": "DELETE",
+			"apiPath": "/accounts/{account_id}/workers/workers/{worker_id}/previews/{preview_id}",
+			"operationId": "workers.previews.delete",
+			"hideCommand": false
+		},
+		{
 			"command": "cf previews deploy",
 			"name": "deploy",
 			"fullPath": ["previews", "deploy"],

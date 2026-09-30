@@ -196,6 +196,41 @@ describe("hand-written leaf commands", () => {
 		);
 	});
 
+	it("splices Preview deployment into the generated Preview API root", () => {
+		const [registered] = handWrittenLeafCommands("previews");
+		expect(registered).toEqual({
+			kind: "leaf",
+			parent: "previews",
+			name: "deploy",
+			dir: "previews/deploy",
+		});
+		if (registered === undefined) {
+			throw new Error("previews deploy is not registered");
+		}
+		expect(
+			readHandWrittenLeafCommandMeta("previews", registered)
+		).toMatchObject({
+			command: "cf previews deploy",
+			fullPath: ["previews", "deploy"],
+		});
+		const generated = generateResourceIndexFile(
+			{
+				name: "previews",
+				description: "Manage Worker Previews",
+				methods: [],
+				globalCliArgs: [],
+				hideCommand: false,
+			},
+			["delete"],
+			[]
+		);
+		expect(generated).toContain(
+			"import $deploy from '#commands/previews/deploy/index.js';"
+		);
+		expect(generated).toContain(".command($delete)");
+		expect(generated).toContain(".command($deploy)");
+	});
+
 	it("binds sidecar identity to the registered command", () => {
 		const [registered] = handWrittenLeafCommands("workers");
 		if (registered === undefined) {

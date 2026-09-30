@@ -128,6 +128,21 @@ describe("hand-written command metadata", () => {
 		});
 	});
 
+	it("publishes Preview deletion as a generated API command", () => {
+		expect(commands.get("cf previews delete")).toMatchObject({
+			fullPath: ["previews", "delete"],
+			httpMethod: "DELETE",
+			apiPath:
+				"/accounts/{account_id}/workers/workers/{worker_id}/previews/{preview_id}",
+			operationId: "workers.previews.delete",
+			arguments: [expect.objectContaining({ name: "name", required: true })],
+			options: expect.arrayContaining([
+				expect.objectContaining({ name: "worker", required: true }),
+				expect.objectContaining({ name: "force-delete", required: false }),
+			]),
+		});
+	});
+
 	it("does not publish global mode as a command-local option", () => {
 		for (const command of commands.values()) {
 			expect(command.options?.some((option) => option.name === "mode")).toBe(
@@ -247,9 +262,10 @@ describe("hand-written-only command metadata", () => {
 			dir: "auth",
 		});
 		expect(commands.get("cf previews deploy")?.handWritten).toEqual({
-			kind: "root",
+			kind: "leaf",
 			overrides: false,
-			dir: "previews",
+			dir: "previews/deploy",
+			parent: "previews",
 		});
 		expect(commands.get("cf d1 migrations create")?.handWritten).toEqual({
 			kind: "subgroup",

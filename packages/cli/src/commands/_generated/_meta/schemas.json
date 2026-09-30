@@ -60658,6 +60658,37 @@
 				}
 			]
 		},
+		"previews delete": {
+			"operationId": "workers.previews.delete",
+			"httpMethod": "DELETE",
+			"path": "/accounts/{account_id}/workers/workers/{worker_id}/previews/{preview_id}",
+			"pathParams": [
+				{
+					"name": "account_id",
+					"type": "string",
+					"required": true
+				},
+				{
+					"name": "worker_id",
+					"type": "string",
+					"required": true
+				},
+				{
+					"name": "preview_id",
+					"type": "string",
+					"required": true
+				}
+			],
+			"queryParams": [
+				{
+					"name": "force",
+					"type": "boolean",
+					"required": false
+				}
+			],
+			"hasRequestBody": false,
+			"requestBodyFields": []
+		},
 		"queries bulk create": {
 			"operationId": "postAccountsAccountIdBrandProtectionQueriesBulk",
 			"httpMethod": "POST",

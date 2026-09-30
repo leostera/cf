@@ -1049,6 +1049,15 @@ export const generatedCommands: GeneratedCommand[] = [
 	},
 	{
 		command: lazyCommand<CommonYargsOptions>(
+			"previews",
+			"Manage Worker Previews",
+			() => import("./previews/index.js"),
+			null
+		),
+		hideCommand: false,
+	},
+	{
+		command: lazyCommand<CommonYargsOptions>(
 			"queries",
 			"queries",
 			() => import("./queries/index.js"),
