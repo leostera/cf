@@ -66,7 +66,7 @@ describe("cf previews delete", () => {
 		expect(log).not.toHaveBeenCalled();
 	});
 
-	it("sends API force only when --force-delete is specified", async () => {
+	it("sends API force only when --delete-with-references is specified", async () => {
 		let url: URL | undefined;
 		server.use(
 			http.delete(
@@ -86,16 +86,16 @@ describe("cf previews delete", () => {
 				"--worker",
 				"my-worker",
 				"--force",
-				"--force-delete",
+				"--delete-with-references",
 			],
 			env
 		);
 
 		expect(url?.searchParams.get("force")).toBe("true");
-		expect(url?.searchParams.has("force-delete")).toBe(false);
+		expect(url?.searchParams.has("delete-with-references")).toBe(false);
 	});
 
-	it("requires confirmation even with --force-delete", async () => {
+	it("requires confirmation even with --delete-with-references", async () => {
 		await runCf(
 			[
 				"previews",
@@ -103,7 +103,7 @@ describe("cf previews delete", () => {
 				"feature",
 				"--worker",
 				"my-worker",
-				"--force-delete",
+				"--delete-with-references",
 			],
 			env
 		);

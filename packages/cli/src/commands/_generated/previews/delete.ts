@@ -32,7 +32,7 @@ function builder(yargs: Argv<CommonYargsOptions>) {
 			description: "Identifier for the Worker, which can be ID or name.",
 			demandOption: true,
 		})
-		.option("force-delete", {
+		.option("delete-with-references", {
 			type: "boolean",
 			description:
 				"If true, delete the Preview even when other Workers still reference it. Service bindings in those Workers may be left broken. Durable Object namespaces implemented by the deleted Preview are deleted even if other Workers reference them.",
@@ -64,14 +64,14 @@ const command: CommandModule<CommonYargsOptions, Args> = {
 			{
 				command: "previews delete",
 				classification: {
-					safeFlags: ["force-delete", "dry-run", "force"],
+					safeFlags: ["delete-with-references", "dry-run", "force"],
 					shortFlagAliases: { f: { canonical: "force", type: "boolean" } },
 				} satisfies ArgClassification<Args>,
 			},
 			argv as Record<string, unknown>,
 			async () => {
 				const queryParams: Query = {
-					force: argv["force-delete"],
+					force: argv["delete-with-references"],
 				};
 				if (argv.dryRun) {
 					const __cfDryRunAccountId = await resolveAccountIdSilent();

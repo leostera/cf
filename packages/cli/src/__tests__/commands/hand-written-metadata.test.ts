@@ -138,7 +138,10 @@ describe("hand-written command metadata", () => {
 			arguments: [expect.objectContaining({ name: "name", required: true })],
 			options: expect.arrayContaining([
 				expect.objectContaining({ name: "worker", required: true }),
-				expect.objectContaining({ name: "force-delete", required: false }),
+				expect.objectContaining({
+					name: "delete-with-references",
+					required: false,
+				}),
 			]),
 		});
 	});
