@@ -1,4 +1,3 @@
-import { readBuildOutput } from "@cloudflare/build-output-utils";
 import {
 	ApplicationsService,
 	configureOpenAPIForContainerPull,
@@ -17,6 +16,7 @@ import {
 import { getAccountId, getAuthToken } from "../../lib/auth.js";
 import { BuildOutputConfigError } from "../../lib/build-output-error.js";
 import {
+	readBuildOutput,
 	buildOutputWorkerOption,
 	parseWorkerConfig,
 	selectBuildOutputWorker,

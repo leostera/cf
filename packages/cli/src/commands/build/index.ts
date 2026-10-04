@@ -1,7 +1,7 @@
 import * as clack from "@clack/prompts";
-import { readBuildOutput } from "@cloudflare/build-output-utils";
 import { prepareProject, runProjectCommand } from "../../lib/autoconfig.js";
 import {
+	readBuildOutput,
 	parseWorkerConfig,
 	selectBuildOutputWorker,
 } from "../../lib/build-output.js";
@@ -80,7 +80,7 @@ export async function runBuild(
 		throw new CliExit(result.exitCode, { signal: result.signal });
 	}
 
-	const { workers, rootConfig } = await readBuildOutput(cwd);
+	const { workers, rootConfig } = await readBuildOutput(cwd, { afterBuild: true });
 	parseWorkerConfig(
 		selectBuildOutputWorker(workers, selectedWorker),
 		rootConfig

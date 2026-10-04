@@ -2,6 +2,7 @@ import { writeFile } from "node:fs/promises";
 import path from "node:path";
 import { runBuild } from "#commands/build/index.js";
 import {
+	readBuildOutput,
 	BuildOutputConfigError,
 	buildOutputWorkerOption,
 	parseWorkerConfig,
@@ -11,7 +12,6 @@ import {
 import { assembleBuildResult } from "#lib/deploy-input.js";
 import { formatOutput } from "#lib/output.js";
 import { withProgress } from "#lib/progress.js";
-import { readBuildOutput } from "@cloudflare/build-output-utils";
 import { createWorkerUploadForm } from "@cloudflare/deploy-helpers/create-worker-upload-form";
 import {
 	analyseBundle,

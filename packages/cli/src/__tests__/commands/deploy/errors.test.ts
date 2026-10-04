@@ -94,6 +94,8 @@ describe("cf deploy — error handling", () => {
 
 	it("fails when no build output exists", async () => {
 		// Don't seed any build output
-		await expect(runCf(["deploy"])).rejects.toThrow(/No root config found/i);
+		await expect(runCf(["deploy", "--prebuilt"])).rejects.toThrow(
+			/Run cf build from the project root/
+		);
 	});
 });

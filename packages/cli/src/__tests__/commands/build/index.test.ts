@@ -7,7 +7,7 @@ import {
 } from "@cloudflare/workers-utils/test-helpers";
 import { describe, expect, it } from "vitest";
 import { runBuild } from "../../../commands/build/index.js";
-import { BuildOutputError } from "../../../lib/build-output.js";
+import { BuildOutputConfigError } from "../../../lib/build-output.js";
 import { runCf } from "../../helpers/run-cf.js";
 import { buildOutputRootConfig, workerConfig } from "../deploy/helpers.js";
 
@@ -294,7 +294,9 @@ describe("cf build", () => {
 		});
 		chmod("node_modules/wrangler/bin/cf-wrangler.js");
 
-		await expect(runCf(["build"])).rejects.toThrow(BuildOutputError);
+		await expect(runCf(["build"])).rejects.toThrow(BuildOutputConfigError);
+		expect(std.err).toContain("build command exited successfully");
+		expect(std.err).toContain("rerun cf build");
 	});
 });
 

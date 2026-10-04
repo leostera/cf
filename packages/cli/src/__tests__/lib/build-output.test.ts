@@ -7,6 +7,7 @@ import { runInTempDir, seed } from "@cloudflare/workers-utils/test-helpers";
 import { describe, expect, it } from "vitest";
 import {
 	BuildOutputConfigError,
+	readBuildOutput as readBuildOutputWithHints,
 	parseWorkerConfig,
 	selectBuildOutputWorker,
 	validateBuildOutputMode,
@@ -15,6 +16,18 @@ import {
 describe("build output", () => {
 	runInTempDir();
 	const rootConfig = JSON.stringify({ buildContext: { isPreview: false } });
+
+	it("suggests generating output when the root config is missing", async () => {
+		await expect(readBuildOutputWithHints(process.cwd())).rejects.toThrow(
+			/Run cf build from the project root.*omit it to build automatically/s
+		);
+	});
+
+	it("distinguishes a successful build that did not write output", async () => {
+		await expect(
+			readBuildOutputWithHints(process.cwd(), { afterBuild: true })
+		).rejects.toThrow(/build command exited successfully.*rerun cf build/s);
+	});
 
 	it("reads the default Worker from the Build Output Specification tree", async () => {
 		await seed({

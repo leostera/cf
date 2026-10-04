@@ -1,5 +1,4 @@
 import * as clack from "@clack/prompts";
-import { readBuildOutput } from "@cloudflare/build-output-utils";
 import {
 	cleanupBuiltImages,
 	configureOpenAPIForContainerPull,
@@ -17,6 +16,7 @@ import {
 } from "@cloudflare/workers-utils";
 import { getAccountId, getAuthToken } from "../../lib/auth.js";
 import {
+	readBuildOutput,
 	buildOutputWorkerOption,
 	parseWorkerConfig,
 	selectBuildOutputWorker,

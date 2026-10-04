@@ -1,4 +1,8 @@
 import path from "node:path";
+import {
+	BuildOutputError,
+	readBuildOutput as readBuildOutputFromDisk,
+} from "@cloudflare/build-output-utils";
 import { convertToWranglerConfig } from "@cloudflare/config";
 import { normalizeAndValidateConfig } from "@cloudflare/workers-utils";
 import { BuildOutputConfigError } from "./build-output-error.js";
@@ -14,6 +18,29 @@ import type { Config, RawConfig } from "@cloudflare/workers-utils";
 // errors thrown by the Build Output Specification reader.
 export { BuildOutputError } from "@cloudflare/build-output-utils";
 export { BuildOutputConfigError } from "./build-output-error.js";
+
+/** Read the Build Output tree with a recovery path for a missing root config. */
+export async function readBuildOutput(
+	cwd: string,
+	{ afterBuild = false }: { afterBuild?: boolean } = {}
+): ReturnType<typeof readBuildOutputFromDisk> {
+	try {
+		return await readBuildOutputFromDisk(cwd);
+	} catch (error) {
+		if (
+			error instanceof BuildOutputError &&
+			/no root config found at /i.test(error.message)
+		) {
+			const nextStep = afterBuild
+				? "The build command exited successfully but did not produce Build Output. Check that the project's build script or dev-server delegate writes Build Output Specification files, then rerun cf build."
+				: "Run cf build from the project root to generate Build Output, then retry. If you passed --prebuilt, omit it to build automatically.";
+			throw new BuildOutputConfigError(
+				`${error.message}\n${nextStep}\nCheck that you are running from the project root (current directory: ${cwd}).`
+			);
+		}
+		throw error;
+	}
+}
 
 export interface ParsedWorkerConfig {
 	wranglerConfig: ContainerlessConfig;
