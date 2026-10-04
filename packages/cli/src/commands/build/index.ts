@@ -80,7 +80,9 @@ export async function runBuild(
 		throw new CliExit(result.exitCode, { signal: result.signal });
 	}
 
-	const { workers, rootConfig } = await readBuildOutput(cwd, { afterBuild: true });
+	const { workers, rootConfig } = await readBuildOutput(cwd, {
+		afterBuild: true,
+	});
 	parseWorkerConfig(
 		selectBuildOutputWorker(workers, selectedWorker),
 		rootConfig
